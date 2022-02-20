@@ -17,7 +17,7 @@ faDB = pd.read_csv(dataPath, index_col='USNR')
 conv = pd.read_csv(conversionPath)
 
 data = faDB.loc[Sensor]
-print(data)
+#print(data)
 #print(conv) 
 
 #print(conv['Measurement'])
@@ -38,9 +38,13 @@ CV_D_wodrivewoCM
 para = conv.iloc[6]
 
 if data.size != 0:      #check if Sensor is listed in DB
+    Meas = para['Measurement']
     MeasMean = data[para['Mean']]
-
-    
+    ConvMean = MeasMean * para['Conversion']
+    if ConvMean > para['Min'] and ConvMean < para['Max']:
+        print(f'{Meas} = {ConvMean} : is in Spec')
+    else:
+        print(f'{Meas} = {ConvMean} : is out of Spec')
     
 else:
     print('ERROR: USNR not found')
