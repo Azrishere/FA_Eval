@@ -41,5 +41,5 @@ S31:CM_in_Sens,g:rate_x:CM_in_Sens_pos:mean - g:rate_x:CM_in_Sens_neg:mean,g:rat
 S31:CM_inSens_PD_AI,g:rate_x:CM_inSens_PD_AI_pos:mean - g:rate_x:CM_inSens_PD_AI_neg:mean,g:rate_x:CM_inSens_PD_AI_pos:std - g:rate_x:CM_inSens_PD_AI_neg:std,0.500000000000000,-5,5,0.2
 S31:CM_inSens_PD_AA,g:rate_x:CM_inSens_PD_AA_pos:mean - g:rate_x:CM_inSens_PD_AA_neg:mean,g:rate_x:CM_inSens_PD_AA_pos:std - g:rate_x:CM_inSens_PD_AA_neg:std,0.500000000000000,-5,5,0.2
 S31:CM_inSens_PD_AIAA,g:rate_x:CM_inSens_PD_AIAA_pos:mean - g:rate_x:CM_inSens_PD_AIAA_neg:mean,g:rate_x:CM_inSens_PD_AIAA_pos:std - g:rate_x:CM_inSens_PD_AIAA_neg:std,0.500000000000000,-5,5,0.2
-CV_D_in_Sens,g:rate_x:CV_D_in_Sens:mean,g:rate_x:CV_D_in_Sens:std,1.000000000000000,0,20000,5
+CV_D_in_Sens,g:rate_x:CV_D_in_Sens:mean,g:rate_x:CV_D_in_Sens:std,1.000000000000000,0,24000,5
 GYRO_TAU,g:Tau:mean,,1.000000000000000,40,100,
