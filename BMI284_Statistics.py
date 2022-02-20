@@ -33,5 +33,5 @@ data = faDB.loc[Sensor]
 
 if data == 0:
     print('error no data found')
-if elif 
+#if elif 
     
