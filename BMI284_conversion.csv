@@ -1,149 +1,45 @@
 ﻿Measurement,Mean,Std,Conversion,Min,Max,Std_max
-RATE_X_wodrivewoCM       ,g:rate_x:wodrivewoCM:mean,g:rate_x:wodrivewoCM:std,1.000000000000000,-2,2,0.1
-RATE_Y_wodrivewoCM       ,g:rate_y:wodrivewoCM:mean,g:rate_y:wodrivewoCM:std,1.000000000000000,-2,2,0.1
-RATE_Z_wodrivewoCM       ,g:rate_z:wodrivewoCM:mean,g:rate_z:wodrivewoCM:std,1.000000000000000,-2,2,0.1
-Quad_X_wodrivewoCM       ,g:quad_x:wodrivewoCM:mean,g:quad_x:wodrivewoCM:std,0.101719772137173,-4,4,0.8
-Quad_Y_wodrivewoCM       ,g:quad_y:wodrivewoCM:mean,g:quad_y:wodrivewoCM:std,0.101719772137173,-4,4,0.8
-Quad_Z_wodrivewoCM       ,g:quad_z:wodrivewoCM:mean,g:quad_z:wodrivewoCM:std,0.101719772137173,-4,4,0.8
-CV_D_wodrivewoCM in TADC ,CV_D_wodrivewoCM_inTADC:mean,CV_D_wodrivewoCM_inTADC:std,0.036804199218750,-50,50,5
-CV_X_wodrivewoCM in TADC ,CV_X_wodrivewoCM_inTADC:mean,CV_X_wodrivewoCM_inTADC:std,0.036804199218750,-150,150,5
-CV_Y_wodrivewoCM in TADC ,CV_Y_wodrivewoCM_inTADC:mean,CV_Y_wodrivewoCM_inTADC:std,0.036804199218750,-150,150,5
-CV_Z_wodrivewoCM in TADC ,CV_Z_wodrivewoCM_inTADC:mean,CV_Z_wodrivewoCM_inTADC:std,0.036804199218750,-150,150,5
-RATE_X_wodrivewCM        ,g:rate_x:wodrivewCM:mean,g:rate_x:wodrivewCM:std,1.000000000000000,-2,2,0.1
-RATE_Y_wodrivewCM        ,g:rate_y:wodrivewCM:mean,g:rate_y:wodrivewCM:std,1.000000000000000,-2,2,0.1
-RATE_Z_wodrivewCM        ,g:rate_z:wodrivewCM:mean,g:rate_z:wodrivewCM:std,1.000000000000000,-2,2,0.1
-CV_D_wodrivewCM in TADC  ,CV_D_wodrivewCM_inTADC:mean,CV_D_wodrivewCM_inTADC:std,0.036804199218750,-50,50,5
-CV_X_wodrivewCM in TADC  ,CV_X_wodrivewCM_inTADC:mean,CV_X_wodrivewCM_inTADC:std,0.036804199218750,-150,150,5
-CV_Y_wodrivewCM in TADC  ,CV_Y_wodrivewCM_inTADC:mean,CV_Y_wodrivewCM_inTADC:std,0.036804199218750,-150,150,5
-CV_Z_wodrivewCM in TADC  ,CV_Z_wodrivewCM_inTADC:mean,CV_Z_wodrivewCM_inTADC:std,0.036804199218750,-150,150,5
-CV_D_inTADC_diff         ,CV_D_inTADC_diff,,1.000000000000000,-2,2,
-CV_X_inTADC_diff         ,CV_X_inTADC_diff,,1.000000000000000,-2,2,
-CV_Y_inTADC_diff         ,CV_Y_inTADC_diff,,1.000000000000000,-2,2,
-CV_Z_inTADC_diff         ,CV_Z_inTADC_diff,,1.000000000000000,-2,2,
+RATE_X_wodrivewoCM,g:rate_x:wodrivewoCM:mean,g:rate_x:wodrivewoCM:std,1.000000000000000,-2,2,0.1
+RATE_Y_wodrivewoCM,g:rate_y:wodrivewoCM:mean,g:rate_y:wodrivewoCM:std,1.000000000000000,-2,2,0.1
+RATE_Z_wodrivewoCM,g:rate_z:wodrivewoCM:mean,g:rate_z:wodrivewoCM:std,1.000000000000000,-2,2,0.1
+Quad_X_wodrivewoCM,g:quad_x:wodrivewoCM:mean,g:quad_x:wodrivewoCM:std,0.101719772137173,-4,4,0.8
+Quad_Y_wodrivewoCM,g:quad_y:wodrivewoCM:mean,g:quad_y:wodrivewoCM:std,0.101719772137173,-4,4,0.8
+Quad_Z_wodrivewoCM,g:quad_z:wodrivewoCM:mean,g:quad_z:wodrivewoCM:std,0.101719772137173,-4,4,0.8
+CV_D_wodrivewoCM in TADC,CV_D_wodrivewoCM_inTADC:mean,CV_D_wodrivewoCM_inTADC:std,0.036804199218750,-50,50,5
+CV_X_wodrivewoCM in TADC,CV_X_wodrivewoCM_inTADC:mean,CV_X_wodrivewoCM_inTADC:std,0.036804199218750,-150,150,5
+CV_Y_wodrivewoCM in TADC,CV_Y_wodrivewoCM_inTADC:mean,CV_Y_wodrivewoCM_inTADC:std,0.036804199218750,-150,150,5
+CV_Z_wodrivewoCM in TADC,CV_Z_wodrivewoCM_inTADC:mean,CV_Z_wodrivewoCM_inTADC:std,0.036804199218750,-150,150,5
+RATE_X_wodrivewCM,g:rate_x:wodrivewCM:mean,g:rate_x:wodrivewCM:std,1.000000000000000,-2,2,0.1
+RATE_Y_wodrivewCM,g:rate_y:wodrivewCM:mean,g:rate_y:wodrivewCM:std,1.000000000000000,-2,2,0.1
+RATE_Z_wodrivewCM,g:rate_z:wodrivewCM:mean,g:rate_z:wodrivewCM:std,1.000000000000000,-2,2,0.1
+CV_D_wodrivewCM in TADC,CV_D_wodrivewCM_inTADC:mean,CV_D_wodrivewCM_inTADC:std,0.036804199218750,-50,50,5
+CV_X_wodrivewCM in TADC,CV_X_wodrivewCM_inTADC:mean,CV_X_wodrivewCM_inTADC:std,0.036804199218750,-150,150,5
+CV_Y_wodrivewCM in TADC,CV_Y_wodrivewCM_inTADC:mean,CV_Y_wodrivewCM_inTADC:std,0.036804199218750,-150,150,5
+CV_Z_wodrivewCM in TADC,CV_Z_wodrivewCM_inTADC:mean,CV_Z_wodrivewCM_inTADC:std,0.036804199218750,-150,150,5
+CV_D_inTADC_diff,CV_D_inTADC_diff,,1.000000000000000,-2,2,
+CV_X_inTADC_diff,CV_X_inTADC_diff,,1.000000000000000,-2,2,
+CV_Y_inTADC_diff,CV_Y_inTADC_diff,,1.000000000000000,-2,2,
+CV_Z_inTADC_diff,CV_Z_inTADC_diff,,1.000000000000000,-2,2,
 CM_OFFSET_wodrive in TADC,CM_OFFSET_WODRIVE_inTADC:mean,CM_OFFSET_WODRIVE_inTADC:std,0.036804199218750,-50,50,5
-Aout(4k_en)              ,g:aout_4k:mean,g:aout_4k:std,1000.000000000000000,50,550,7.5
-Pout(4k_en)              ,g:pout_4k:mean,g:pout_4k:std,1000.000000000000000,-300,300,2
-Aout(4k_en & pd_aa)      ,g:aout_4k_pd_aa:mean,g:aout_4k_pd_aa:std,1000.000000000000000,100,1100,7.5
-Aout(4k_en & pd_ai)      ,g:aout_4k_pd_ai:mean,g:aout_4k_pd_ai:std,1000.000000000000000,100,1100,7.5
-Aout normal mode         ,g:aout:mean,g:aout:std,1000.000000000000000,100,1100,7.5
-Pout normal mode         ,g:pout:mean,g:pout:std,1000.000000000000000,-300,300,2
-asymm_pout_4um_diff      ,asymm_pout_4um_diff,,1.000000000000000,-10,-0.5,
-asymm_aout_4um_ratio     ,asymm_aout_4um_ratio,,1.000000000000000,0.49,0.51,
-asymm_aout_pdaaai_ratio  ,asymm_aout_pdaaai_ratio,,1.000000000000000,0.975,1.025,
-Normal_Rate_x            ,g:rate_x:mean_normal,g:rate_x:std_normal,1.000000000000000,-25,25,0.2
-Normal_Rate_y            ,g:rate_y:mean_normal,g:rate_y:std_normal,1.000000000000000,-25,25,0.2
-Normal_Rate_z            ,g:rate_z:mean_normal,g:rate_z:std_normal,1.000000000000000,-25,25,0.2
-CM_OFFSET_normal in TADC ,CM_OFFSET_NORMAL_inTADC:mean,CM_OFFSET_NORMAL_inTADC:std,0.036804199218750,-50,550,7.5
-AoutTrim                 ,AoutTrim,,1000.000000000000000,100,1100,
-Aout_s16                 ,g:aout:mean_s16,g:aout:std_s16,1000.000000000000000,200,1100,
-Aout_rel_dev_s16         ,Aout_rel_dev_s16,,1.000000000000000,-3,3,
-S31:CM_in_Sens           ,g:rate_x:CM_in_Sens_pos:mean - g:rate_x:CM_in_Sens_neg:mean,g:rate_x:CM_in_Sens_pos:std - g:rate_x:CM_in_Sens_neg:std,0.500000000000000,-5,5,0.2
-S31:CM_inSens_PD_AI      ,g:rate_x:CM_inSens_PD_AI_pos:mean - g:rate_x:CM_inSens_PD_AI_neg:mean,g:rate_x:CM_inSens_PD_AI_pos:std - g:rate_x:CM_inSens_PD_AI_neg:std,0.500000000000000,-5,5,0.2
-S31:CM_inSens_PD_AA      ,g:rate_x:CM_inSens_PD_AA_pos:mean - g:rate_x:CM_inSens_PD_AA_neg:mean,g:rate_x:CM_inSens_PD_AA_pos:std - g:rate_x:CM_inSens_PD_AA_neg:std,0.500000000000000,-5,5,0.2
-S31:CM_inSens_PD_AIAA    ,g:rate_x:CM_inSens_PD_AIAA_pos:mean - g:rate_x:CM_inSens_PD_AIAA_neg:mean,g:rate_x:CM_inSens_PD_AIAA_pos:std - g:rate_x:CM_inSens_PD_AIAA_neg:std,0.500000000000000,-5,5,0.2
-CV_D_in_Sens             ,g:rate_x:CV_D_in_Sens:mean,g:rate_x:CV_D_in_Sens:std,1.000000000000000,0,20000,5
-GYRO_TAU                 ,g:Tau:mean,,1.000000000000000,40,100,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+Aout(4k_en),g:aout_4k:mean,g:aout_4k:std,1000.000000000000000,50,550,7.5
+Pout(4k_en),g:pout_4k:mean,g:pout_4k:std,1000.000000000000000,-300,300,2
+Aout(4k_en & pd_aa),g:aout_4k_pd_aa:mean,g:aout_4k_pd_aa:std,1000.000000000000000,100,1100,7.5
+Aout(4k_en & pd_ai),g:aout_4k_pd_ai:mean,g:aout_4k_pd_ai:std,1000.000000000000000,100,1100,7.5
+Aout normal mode,g:aout:mean,g:aout:std,1000.000000000000000,100,1100,7.5
+Pout normal mode,g:pout:mean,g:pout:std,1000.000000000000000,-300,300,2
+asymm_pout_4um_diff,asymm_pout_4um_diff,,1.000000000000000,-10,-0.5,
+asymm_aout_4um_ratio,asymm_aout_4um_ratio,,1.000000000000000,0.49,0.51,
+asymm_aout_pdaaai_ratio,asymm_aout_pdaaai_ratio,,1.000000000000000,0.975,1.025,
+Normal_Rate_x,g:rate_x:mean_normal,g:rate_x:std_normal,1.000000000000000,-25,25,0.2
+Normal_Rate_y,g:rate_y:mean_normal,g:rate_y:std_normal,1.000000000000000,-25,25,0.2
+Normal_Rate_z,g:rate_z:mean_normal,g:rate_z:std_normal,1.000000000000000,-25,25,0.2
+CM_OFFSET_normal in TADC,CM_OFFSET_NORMAL_inTADC:mean,CM_OFFSET_NORMAL_inTADC:std,0.036804199218750,-50,550,7.5
+AoutTrim,AoutTrim,,1000.000000000000000,100,1100,
+Aout_s16,g:aout:mean_s16,g:aout:std_s16,1000.000000000000000,200,1100,
+Aout_rel_dev_s16,Aout_rel_dev_s16,,1.000000000000000,-3,3,
+S31:CM_in_Sens,g:rate_x:CM_in_Sens_pos:mean - g:rate_x:CM_in_Sens_neg:mean,g:rate_x:CM_in_Sens_pos:std - g:rate_x:CM_in_Sens_neg:std,0.500000000000000,-5,5,0.2
+S31:CM_inSens_PD_AI,g:rate_x:CM_inSens_PD_AI_pos:mean - g:rate_x:CM_inSens_PD_AI_neg:mean,g:rate_x:CM_inSens_PD_AI_pos:std - g:rate_x:CM_inSens_PD_AI_neg:std,0.500000000000000,-5,5,0.2
+S31:CM_inSens_PD_AA,g:rate_x:CM_inSens_PD_AA_pos:mean - g:rate_x:CM_inSens_PD_AA_neg:mean,g:rate_x:CM_inSens_PD_AA_pos:std - g:rate_x:CM_inSens_PD_AA_neg:std,0.500000000000000,-5,5,0.2
+S31:CM_inSens_PD_AIAA,g:rate_x:CM_inSens_PD_AIAA_pos:mean - g:rate_x:CM_inSens_PD_AIAA_neg:mean,g:rate_x:CM_inSens_PD_AIAA_pos:std - g:rate_x:CM_inSens_PD_AIAA_neg:std,0.500000000000000,-5,5,0.2
+CV_D_in_Sens,g:rate_x:CV_D_in_Sens:mean,g:rate_x:CV_D_in_Sens:std,1.000000000000000,0,20000,5
+GYRO_TAU,g:Tau:mean,,1.000000000000000,40,100,
