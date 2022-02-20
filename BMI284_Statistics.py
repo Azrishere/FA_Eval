@@ -8,16 +8,16 @@ import pandas as pd
 #from nptdms import TdmsFile
 
 dataPath = 'BMI284_DB.csv'
-conversionPath = 'BMI284_conversion.xlsx'
+conversionPath = 'BMI284_conversion.csv'
 Sensor = '0000H6K250004036038KY'
 compareToRef = 0
 compareToAll = 0
 
 faDB = pd.read_csv(dataPath, index_col='USNR')
-conv = pd.read_excel(conversionPath)
+conv = pd.read_csv(conversionPath)
 
 data = faDB.loc[Sensor]
-#print(data)
+print(data)
 #print(conv) 
 
 #print(conv['Measurement'])
@@ -31,7 +31,16 @@ data = faDB.loc[Sensor]
 
 #for Measurement in conv.iterrows():
 
-if data == 0:
-    print('error no data found')
-#if elif 
+'''
+test if one Value can be converted and checked correctly before iterating over all values
+CV_D_wodrivewoCM
+'''
+para = conv.iloc[6]
+
+if data.size != 0:      #check if Sensor is listed in DB
+    MeasMean = data[para['Mean']]
+
     
+    
+else:
+    print('ERROR: USNR not found')
