@@ -2,15 +2,12 @@
 # Date :        13.02.2022
 # Description:  Script for statistical analysis of BMI284 sensors
 
-from contextlib import suppress
 from matplotlib import pyplot as plt
-from numpy import isnan
 import pandas as pd
-#from nptdms import TdmsFile
 
 dataPath = 'BMI284_DB.csv'
 conversionPath = 'BMI284_conversion.csv'
-Sensor = '0000H6K250004036038KY'
+Sensor = '0000H2MH42021035014KY'
 compareToRef = 0
 compareToAll = 0
 
@@ -18,17 +15,6 @@ faDB = pd.read_csv(dataPath, index_col='USNR')
 conv = pd.read_csv(conversionPath)
 
 data = faDB.loc[Sensor]
-#print(data)
-#print(conv) 
-
-#print(conv['Measurement'])
-
-#MeasMean = conv['Mean']
-#MeasStd = conv['Std']
-#MeasConv = conv['Conversion']
-#MeasMin = conv['Min']
-#MeasMax = conv['Max']
-#MeasStd_max = conv['Std_max']
 
 for index, Measurement in conv.iterrows():
     para = conv.iloc[index]
@@ -64,8 +50,9 @@ for index, Measurement in conv.iterrows():
     else:
         print(f'{Meas} = {ConvMean} : Mean is too high') 
 
-    if ConvStd < para['Std_max']:
+    if ConvStd < para['Std_max'] or ConvStd == 0:
         #print(f'{Meas} = {ConvMean} : is in Spec')
         continue
     else:
         print(f'{Meas} = {ConvStd} : Noise is too high') 
+print('All other Values are in Spec')
