@@ -60,4 +60,4 @@ for index, Measurement in conv.iterrows():
         continue
     else:
         print(f'{Meas} = {ConvStd} : Noise is too high') 
-print('\n --------------------All other Gyro Values are in Spec-------------------- \n')
+print('\n --------------------All other Values are in Spec-------------------- \n')
