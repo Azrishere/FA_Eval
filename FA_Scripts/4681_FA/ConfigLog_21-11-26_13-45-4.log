@@ -1,0 +1,184 @@
+[13:38:37]: 
+[13:38:37]: Start Initialization
+[13:38:37]: 11-26-2021
+[13:38:37]: 
+[13:38:37]: [-- Batch copy info --] 
+
+[13:38:38]: VERSION_GLOBAL                     72_alpha_Arrakis 
+
+[13:38:38]: VERSION_FRAME                      RC\RC_V4.0.0.12\x32 
+
+[13:38:38]: VERSION_HLDRV_POWERSUPPLY          V0.0.0.0 
+
+[13:38:38]: VERSION_HLDRV_XNET                 V1.0.0.0 
+
+[13:38:38]: VERSION_HLDRV_CAN                  V1.2.1.3 
+
+[13:38:38]: VERSION_HLDRV_DLM                  V0.0.0.0 
+
+[13:38:38]: VERSION_HLDRV_DIO                  V0.0.0.0 
+
+[13:38:38]: VERSION_HLDRV_TEMPERATURE          V0.0.0.0 
+
+[13:38:38]: VERSION_HLDRV_ANTRIEB              V1.1.2.2 
+
+[13:38:38]: VERSION_HLDRV_MIO                  V0.0.0.0 
+
+[13:38:38]: VERSION_HLDRV_ZENTRIFUGE           V0.6.0.0 
+
+[13:38:38]: VERSION_HLDRV_ZENTRIFUGE_CSHARP    V2.0.0.8 
+
+[13:38:38]: VERSION_HLDRV_FUNCGEN              RC\V1.1.0.0 
+
+[13:38:38]: VERSION_HLDRV_SCANNER              V1.2.0.0 
+
+[13:38:38]: VERSION_HLDRV_MM                   V1.2.0.0_RC 
+
+[13:38:38]: VERSION_HLDRV_HYPERCUBE            V1.4.3.0 
+
+[13:38:38]: VERSION_HLDRV_BENDER               V1.0.0.0 
+
+[13:38:38]: VERSION_HLDRV_BSI                  V1.3.5.0 
+
+[13:38:38]: VERSION_HLDRV_BST_APP_BOARD         
+
+[13:38:38]: VERSION_NTTIMER                    V1.0.0.0 
+
+[13:38:38]: VERSION_TEC_CONTROLLER             V1.0.0.0 
+
+[13:38:38]: VERSION_SCHNALZTESTER              V0.0.0.2 
+
+[13:38:38]: VERSION_HLDRV_GPIB                 V1.1.0.1_RC 
+
+[13:38:39]: VERSION_SENSOR                     v1.1.11.0_alpha_Arrakis 
+
+[13:38:39]: VERSION_BENDING                    V1.1.0.0 
+
+[13:38:39]: 
+[13:38:39]: Selected device: GYRO CUBE MOTHERBOARD
+[13:38:39]: 
+[13:38:39]: Start Device Load
+[13:38:39]: Check CAN0...ok.
+[13:38:39]: Initializing measurement channels...
+[13:38:39]: ..ok. Found 149 channels.
+[13:38:39]: CAN0 initialized
+[13:38:42]: ERROR: SPI2CAN offline. Error at initialization.
+[13:38:42]: 
+[13:38:42]: Config Device - Status Summary
+[13:38:42]: ERROR: SPI2CAN offline. Error at initialization.
+[13:38:42]: Number of Warnings: 0
+[13:38:42]: Number of Errors: 1
+[13:38:46]: Initialization aborted
+[13:38:46]: ERROR: MiniCan Reset not succesful in function 'DeviceStatus unload'.
+[13:38:53]: 
+[13:38:53]: Start Initialization
+[13:38:53]: 11-26-2021
+[13:38:53]: 
+[13:38:53]: [-- Batch copy info --] 
+
+[13:38:53]: VERSION_GLOBAL                     72_alpha_Arrakis 
+
+[13:38:53]: VERSION_FRAME                      RC\RC_V4.0.0.12\x32 
+
+[13:38:53]: VERSION_HLDRV_POWERSUPPLY          V0.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_XNET                 V1.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_CAN                  V1.2.1.3 
+
+[13:38:53]: VERSION_HLDRV_DLM                  V0.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_DIO                  V0.0.0.0 
+
+[13:38:54]: VERSION_HLDRV_TEMPERATURE          V0.0.0.0 
+
+[13:38:54]: VERSION_HLDRV_ANTRIEB              V1.1.2.2 
+
+[13:38:54]: VERSION_HLDRV_MIO                  V0.0.0.0 
+
+[13:38:54]: VERSION_HLDRV_ZENTRIFUGE           V0.6.0.0 
+
+[13:38:54]: VERSION_HLDRV_ZENTRIFUGE_CSHARP    V2.0.0.8 
+
+[13:38:54]: VERSION_HLDRV_FUNCGEN              RC\V1.1.0.0 
+
+[13:38:54]: VERSION_HLDRV_SCANNER              V1.2.0.0 
+
+[13:38:54]: VERSION_HLDRV_MM                   V1.2.0.0_RC 
+
+[13:38:54]: VERSION_HLDRV_HYPERCUBE            V1.4.3.0 
+
+[13:38:54]: VERSION_HLDRV_BENDER               V1.0.0.0 
+
+[13:38:54]: VERSION_HLDRV_BSI                  V1.3.5.0 
+
+[13:38:54]: VERSION_HLDRV_BST_APP_BOARD         
+
+[13:38:54]: VERSION_NTTIMER                    V1.0.0.0 
+
+[13:38:54]: VERSION_TEC_CONTROLLER             V1.0.0.0 
+
+[13:38:54]: VERSION_SCHNALZTESTER              V0.0.0.2 
+
+[13:38:54]: VERSION_HLDRV_GPIB                 V1.1.0.1_RC 
+
+[13:38:54]: VERSION_SENSOR                     v1.1.11.0_alpha_Arrakis 
+
+[13:38:54]: VERSION_BENDING                    V1.1.0.0 
+
+[13:38:54]: 
+[13:38:54]: Selected device: GYRO CUBE MOTHERBOARD
+[13:38:54]: 
+[13:38:54]: Start Device Load
+[13:38:54]: Check CAN0...ok.
+[13:38:54]: Initializing measurement channels...
+[13:38:54]: ..ok. Found 149 channels.
+[13:38:55]: CAN0 initialized
+[13:38:56]: MiniCan #0x1b96a2 - InterfaceBoard V10 - found
+[13:38:56]: MiniCan: CAN error delay setting = 255
+[13:38:56]: MiniCan: CAN error handler  setting = 255, (0:enabled, 1:disabled)
+[13:38:56]: MiniCan HW version: 0xff, SW version: 0xbe, return code(s): 0
+[13:38:56]: MiniCan: CAN error handler disabled!
+[13:39:11]: SPI2CAN ID 0x72 - SW Version 0x71, HW Version 0x61
+[13:39:11]: SPI2CAN(s) support(s) SPI burst read
+[13:39:11]: SPI2CAN(s) support(s) SPI burst write
+[13:39:11]: End Device Load
+[13:39:11]: 
+[13:39:11]: Config Device - Status Summary
+[13:39:11]: WARNING: If your sensor needs 2 chip selects ensure that you have a motherboard V3!
+[13:39:11]: Number of Warnings: 1
+[13:39:11]: Number of Errors: 0
+[13:40:42]: Device features successfully added to menu.
+[13:40:42]: 
+[13:40:42]: Start Sensor Load
+[13:40:42]: Selected type: BMI284
+[13:40:42]: Selected sample: CA
+[13:40:42]: component BAI284, sample CA.
+[13:40:42]: Reading com settings from ini file...
+[13:40:43]: BAI284 sensor setup file successfully loaded.
+[13:40:44]: BAI284: Configuring power supply setup via ini-file.
+[13:40:44]: 
+[13:40:44]: External Config Files
+[13:40:44]: Component 
+[13:40:44]: Spi2Can Commands
+[13:40:44]: _config\\bai284_rev-ca.conf
+[13:40:44]: Memory Map
+[13:40:44]: _memory_maps\\BAI284_AddrMap.xml
+[13:40:44]: Sensor Setup
+[13:40:44]: _config\\bai284_rev-ca_spi2can_extraction_config.ini
+[13:40:44]: Adding memory map to SCC-group list...
+[13:40:44]: ...ok.
+[13:40:44]: Generating MG list from SCC-group list...
+[13:40:44]: ...ok.
+[13:40:44]: BAI284 Signal re-routing of ODR_INT (Src:Dest->INT1:MM, MT->FREQUENCY, MCh->)
+[13:40:44]: Signal routing completed.
+[13:40:44]: Added measurement parameters of component to MG list.
+[13:40:44]: Power setup successfully completed.
+[13:40:44]: Setup of chip select lines not required.
+[13:40:44]: 
+[13:40:44]: End Initialization
+[13:40:49]: Device error: cannot measure PS1 voltage on triax cube motherboard.
+[13:40:49]: Device error: cannot measure PS1 current on triax cube motherboard.
+[13:40:49]: Device error: cannot measure PS2 voltage on triax cube motherboard.
+[13:40:50]: Device error: cannot measure PS2 current on triax cube motherboard.
+

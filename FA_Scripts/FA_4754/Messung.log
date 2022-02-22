@@ -1,0 +1,414 @@
+13-Dec-2021 17:31:55  | FRM | ### | ----------------------------------------------------------------------------
+13-Dec-2021 17:31:55  | FRM | ### | LMEx Framework Version: 4.0.0.12
+13-Dec-2021 17:31:55  | FRM | ### | LMEx 32Bit
+13-Dec-2021 17:31:55  | FRM | ### | LMEx Sensor Version: 1.1.11.3
+13-Dec-2021 17:31:55  | FRM | ### | User: MIB1RT
+13-Dec-2021 17:31:55  | FRM | ### | User level: EXTENDED
+13-Dec-2021 17:31:55  | FRM | ### | Test bench         : CANONLY
+13-Dec-2021 17:31:55  | FRM | ### | Host name          : RT-Z0KG0
+13-Dec-2021 17:31:55  | FRM | ### | Unibox Id          : 100
+13-Dec-2021 17:31:55  | FRM | ### | Mainboard Number   : -1
+13-Dec-2021 17:31:55  | FRM | ### | Measurement profile: \\rt02fs07.de.bosch.com\laborpplib$\profile_bst\BMI284\00_Engineering\FailureAnalysis\bai284aa_FA_v0.77.lua
+13-Dec-2021 17:31:55  | FRM | ### | Final file path    : g:\DfsDE\LOC\Rt\BST\40_bst_lab\06_products\bmi284-lab\I007764_8D-21-685\04-El._Testing_at_RT_Accel_Gyro(3)\FA_4754
+13-Dec-2021 17:31:55  | FRM | ### | Temporary file path: c:\TempMessdaten\\20211213173155\
+13-Dec-2021 17:31:55  | FRM | ### | Movejob: deactivated
+13-Dec-2021 17:31:55  | FRM | ### | TDMS ByteOrder: BigEndian
+13-Dec-2021 17:31:55  | FRM | ### | TDMS language: german
+13-Dec-2021 17:31:55  | FRM | ### | ----------------------------------------------------------------------------
+13-Dec-2021 17:31:55  | FRM | ### | Info: temporary saving active
+13-Dec-2021 17:31:55  | FRM | ### | -> Flag_SaveAndMoveLokalData: 1
+13-Dec-2021 17:31:55  | FRM | ### | 
+13-Dec-2021 17:31:55  | FRM | ### | ----------------------------------------------------------------------------
+13-Dec-2021 17:31:55  | FRM | ### | Info: no tolerances set in profile or imported from SENSOR.EXE
+13-Dec-2021 17:31:55  | FRM | ### | ----------------------------------------------------------------------------
+13-Dec-2021 17:31:55  | FRM | ### | 
+13-Dec-2021 17:31:56  | FRM | ### | Sensor Pos=1 Nr=1
+13-Dec-2021 17:31:56  | FRM | ### | Sensor Pos=4 Nr=4754
+13-Dec-2021 17:31:56  | FRM | ### | C:\LMEx\hl_treiber\CAN_lua.dll (Version 1.2.1.3) is loaded
+13-Dec-2021 17:31:56  | FRM | ### | Test initializeded
+13-Dec-2021 17:31:56  | FRM | ### | Profile: \\rt02fs07.de.bosch.com\laborpplib$\profile_bst\BMI284\00_Engineering\FailureAnalysis\bai284aa_FA_v0.77.lua
+13-Dec-2021 17:31:58  | INF | ### | Paranoia power reset (TM)
+13-Dec-2021 17:32:00  | SEN | 001 | module_id:14099
+13-Dec-2021 17:32:00  | SEN | 001 | SNR:b0b6808707033713
+13-Dec-2021 17:32:00  | SEN | 001 | USNR:0000H6K250004019055KY
+13-Dec-2021 17:32:01  | INF | ### | CRC 42917 crc read:42917
+13-Dec-2021 17:32:01  | INF | ### | SensorNr1
+13-Dec-2021 17:32:01  | INF | ### | 
+13-Dec-2021 17:32:01  | INF | ### | ||      Measurement         ||    Mean    ||      Std     ||  Comment     ||
+13-Dec-2021 17:32:03  | INF | ### | | RATE_X_wodrivewoCM        |      -0.08dps|  0.04dps  | DC <2dps, AC < 0.088dps |
+13-Dec-2021 17:32:03  | INF | ### | | RATE_Y_wodrivewoCM        |      -0.02dps|  0.05dps  | DC <2dps, AC < 0.088dps |
+13-Dec-2021 17:32:03  | INF | ### | | RATE_Z_wodrivewoCM        |      -0.00dps|  0.06dps  | DC <2dps, AC < 0.088dps |
+13-Dec-2021 17:32:04  | INF | ### | | Quad_X_wodrivewoCM        |       0.90dps|  0.36dps  | comment |
+13-Dec-2021 17:32:04  | INF | ### | | Quad_Y_wodrivewoCM        |       1.25dps|  0.33dps  | comment |
+13-Dec-2021 17:32:04  | INF | ### | | Quad_Z_wodrivewoCM        |      -0.63dps|  1.20dps  | comment |
+13-Dec-2021 17:32:08  | INF | ### | | CV_D_wodrivewoCM in TADC  |        7.14mV|   0.08mV  |  |
+13-Dec-2021 17:32:09  | INF | ### | | CV_X_wodrivewoCM in TADC  |       10.00mV|   0.31mV  |  |
+13-Dec-2021 17:32:11  | INF | ### | | CV_Y_wodrivewoCM in TADC  |       -4.50mV|   0.30mV  |  |
+13-Dec-2021 17:32:12  | INF | ### | | CV_Z_wodrivewoCM in TADC  |       61.81mV|   0.37mV  |  |
+13-Dec-2021 17:32:13  | INF | ### | | RATE_X_wodrivewoCM_s30    |       12.80mv|  -0.21mv  | pls compare it with CV_X_wodrivewoCM in TADC |
+13-Dec-2021 17:32:13  | INF | ### | | RATE_Y_wodrivewoCM_s30    |        1.40mv|   0.14mv  | pls compare it with CV_Y_wodrivewoCM in TADC |
+13-Dec-2021 17:32:13  | INF | ### | | RATE_Z_wodrivewoCM_s30    |       57.99mv|  -0.48mv  | pls compare it with CV_Z_wodrivewoCM in TADC |
+13-Dec-2021 17:32:13  | INF | ### | | S30_CV_X_diff_wodrivewoCM |        2.80mv|   0.00mv  |  |
+13-Dec-2021 17:32:13  | INF | ### | | S30_CV_Y_diff_wodrivewoCM |        5.90mv|   0.00mv  |  |
+13-Dec-2021 17:32:13  | INF | ### | | S30_CV_Z_diff_wodrivewoCM |       -3.83mv|   0.00mv  |  |
+13-Dec-2021 17:32:16  | INF | ### | | RATE_X_wodrivewCM         |      -0.08dps|  0.04dps  | DC <2dps, AC < 0.1dps |
+13-Dec-2021 17:32:16  | INF | ### | | RATE_Y_wodrivewCM         |      -0.03dps|  0.04dps  | DC <2dps, AC < 0.1dps |
+13-Dec-2021 17:32:16  | INF | ### | | RATE_Z_wodrivewCM         |      -0.02dps|  0.04dps  | DC <2dps, AC < 0.1dps |
+13-Dec-2021 17:32:18  | INF | ### | | CV_D_wodrivewCM in TADC   |        7.12mV|   0.08mV  |  |
+13-Dec-2021 17:32:20  | INF | ### | | CV_X_wodrivewCM in TADC   |        9.89mV|   0.36mV  |  |
+13-Dec-2021 17:32:22  | INF | ### | | CV_Y_wodrivewCM in TADC   |       -4.71mV|   0.32mV  |  |
+13-Dec-2021 17:32:23  | INF | ### | | CV_Z_wodrivewCM in TADC   |       61.85mV|   0.57mV  |  |
+13-Dec-2021 17:32:23  | INF | ### | | CV_D_inTADC_diff          |       -0.02mV|   0.00mV  | W/ CM minus W/O CM |
+13-Dec-2021 17:32:23  | INF | ### | | CV_X_inTADC_diff          |       -0.11mV|   0.00mV  | W/ CM minus W/O CM |
+13-Dec-2021 17:32:23  | INF | ### | | CV_Y_inTADC_diff          |       -0.20mV|   0.00mV  | W/ CM minus W/O CM |
+13-Dec-2021 17:32:23  | INF | ### | | CV_Z_inTADC_diff          |        0.04mV|   0.00mV  | W/ CM minus W/O CM |
+13-Dec-2021 17:32:24  | INF | ### | | RATE_X_wodrivewCM_s30     |       12.50mv|  -0.20mv  | pls compare it with CV_X_wodrivewCM in TADC |
+13-Dec-2021 17:32:24  | INF | ### | | RATE_Y_wodrivewCM_s30     |        1.13mv|   0.17mv  | pls compare it with CV_Y_wodrivewCM in TADC |
+13-Dec-2021 17:32:24  | INF | ### | | RATE_Z_wodrivewCM_s30     |       58.23mv|  -0.56mv  | pls compare it with CV_Z_wdrivewoCM in TADC |
+13-Dec-2021 17:32:24  | INF | ### | | S30_CV_X_diff_wodrivewCM  |        2.61mv|   0.00mv  |  |
+13-Dec-2021 17:32:24  | INF | ### | | S30_CV_Y_diff_wodrivewCM  |        5.84mv|   0.00mv  |  |
+13-Dec-2021 17:32:24  | INF | ### | | S30_CV_Z_diff_wodrivewCM  |       -3.62mv|   0.00mv  |  |
+13-Dec-2021 17:32:26  | INF | ### | | CM_OFFSET_wodrive in TADC |        4.61mV|   0.10mV  |  |
+13-Dec-2021 17:32:27  | INF | ### | | Aout(4k_en)               |      334.75mV|   1.84mV  | ^~4k_en=1; cp_cvd=0; \\=> value recovered?~^ |
+13-Dec-2021 17:32:28  | INF | ### | | Pout(4k_en)               |      136.03mV|   0.34mV  | ^~4k_en=1; cp_cvd=0; \\=> value recovered?~^ |
+13-Dec-2021 17:32:28  | INF | ### | | Aout(4k_en & pd_aa)       |      668.34mV|   4.48mV  | ^~4k_en=1; cp_cvd=0; tst_gyr_pd_aa=1 \\ saturation?~^ |
+13-Dec-2021 17:32:29  | INF | ### | | Aout(4k_en & pd_ai)       |      660.76mV|   3.31mV  | ^~4k_en=1; cp_cvd=0; tst_gyr_pd_ai=1 \\ saturation?~^ |
+13-Dec-2021 17:32:30  | INF | ### | | Aout normal mode          |      667.77mV|   2.40mV  | ^~default~^ |
+13-Dec-2021 17:32:30  | INF | ### | | Normal_Rate_x             |       0.38dps|  0.05dps  | comment |
+13-Dec-2021 17:32:30  | INF | ### | | Normal_Rate_y             |      -0.00dps|  0.06dps  | comment |
+13-Dec-2021 17:32:31  | INF | ### | | Normal_Rate_z             |       0.05dps|  0.06dps  | comment |
+13-Dec-2021 17:32:31  | INF | ### | | Pout normal mode          |      141.61mV|   0.27mV  | ^~default~^ |
+13-Dec-2021 17:32:33  | INF | ### | | CM_OFFSET_normal in TADC  |        4.65mV|   0.15mV  |  |
+13-Dec-2021 17:32:33  | INF | ### | | AoutTrim                  |      674.61mV|   0.00mV  |  |
+13-Dec-2021 17:32:33  | INF | ### | | Aout_s16                  |      667.90mV|   0.00mV  |  |
+13-Dec-2021 17:32:33  | INF | ### | | Aout_rel_dev_s16          |      -1.00pct|  0.00pct  |  |
+13-Dec-2021 17:32:35  | INF | ### | | S31:CM_in_Sens            |        0.05Au|   0.05Au  | comment |
+13-Dec-2021 17:32:36  | INF | ### | | S31:CM_inSens_PD_AI       |        0.53Au|   0.04Au  | comment |
+13-Dec-2021 17:32:37  | INF | ### | | S31:CM_inSens_PD_AA       |       -0.45Au|   0.06Au  | comment |
+13-Dec-2021 17:32:37  | INF | ### | | S31:CM_inSens_PD_AIAA     |        0.09Au|   0.05Au  | comment |
+13-Dec-2021 17:32:39  | INF | ### | | CV_D_in_Sens              |   23500.89LSB|  3.07LSB  | comment |
+13-Dec-2021 17:32:42  | INF | ### | | GYRO_TAU                  |       73.24ms|   0.00ms  | comment |
+13-Dec-2021 17:32:42  | INF | ### | | VCO_freq_measured         |       0.00KHz|  0.00KHz  | it would only work on DKT, get 0 from HMP |
+13-Dec-2021 17:32:42  | INF | ### | | VCO_freq_FT               |      25.00KHz|  0.00KHz  |  |
+13-Dec-2021 17:32:42  | INF | ### | | VCO_freq_dev              |    24999.20Hz|   0.00Hz  | 100Hz dev max, This data will only be available when the FA script run on DKT |
+13-Dec-2021 17:32:43  | INF | ### | | Gyro_rate_raw_x           |       2.02dps|  0.06dps  | comment |
+13-Dec-2021 17:32:43  | INF | ### | | Gyro_rate_raw_y           |      10.14dps|  0.06dps  | comment |
+13-Dec-2021 17:32:44  | INF | ### | | Gyro_rate_raw_z           |     -12.57dps|  0.05dps  | comment |
+13-Dec-2021 17:32:44  | INF | ### | | Quad_q2r_res_x            |      -4.41dps|  0.45dps  | comment |
+13-Dec-2021 17:32:44  | INF | ### | | Quad_q2r_res_y            |     218.67dps|  0.67dps  | comment |
+13-Dec-2021 17:32:44  | INF | ### | | Quad_q2r_res_z            |     273.72dps|  1.71dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Rdiff_cvs_x               |       0.23dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Rdiff_cvs_y               |       0.88dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Rdiff_cvs_z               |       0.14dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Qdiff_cvs_x               |   -1455.11dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Qdiff_cvs_y               |   -1962.48dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Qdiff_cvs_z               |    1358.88dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Phase_cvs_x               |     -0.16mrad| 0.00mrad  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Phase_cvs_y               |     -0.45mrad| 0.00mrad  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Phase_cvs_z               |      0.11mrad| 0.00mrad  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Rdiff_x                   |       0.39dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Rdiff_y                   |      -0.84dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Rdiff_z                   |       0.68dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Qdiff_x                   |    -196.56dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Qdiff_y                   |     218.06dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Qdiff_z                   |    -367.18dps|  0.00dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Phase_TOSK_x              |     -2.01mrad| 0.00mrad  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Phase_TOSK_y              |     -3.84mrad| 0.00mrad  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Phase_TOSK_z              |     -1.84mrad| 0.00mrad  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Post_Rate_x               |       0.38dps|  0.10dps  | comment |
+13-Dec-2021 17:32:51  | INF | ### | | Post_Rate_y               |      -0.00dps|  0.09dps  | comment |
+13-Dec-2021 17:32:52  | INF | ### | | Post_Rate_z               |       0.54dps|  0.06dps  | comment |
+13-Dec-2021 17:32:53  | INF | ### | | S23_AoutStUp_Loop, vco_diff = 0|          1.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:53  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = 0|         12.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:53  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = 0|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:53  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = 0|         26.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:55  | INF | ### | | S23_AoutStUp_Loop, vco_diff = -3|          2.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:55  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = -3|         11.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:55  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = -3|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:55  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = -3|         34.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:57  | INF | ### | | S23_AoutStUp_Loop, vco_diff = 3|          3.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:57  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = 3|         11.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:57  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = 3|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:57  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = 3|         28.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:58  | INF | ### | | S23_AoutStUp_Loop, vco_diff = -2|          4.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:58  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = -2|          8.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:58  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = -2|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:32:58  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = -2|         26.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:00  | INF | ### | | S23_AoutStUp_Loop, vco_diff = 2|          5.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:00  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = 2|         13.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:00  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = 2|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:00  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = 2|         28.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:02  | INF | ### | | S23_AoutStUp_Loop, vco_diff = -1|          6.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:02  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = -1|         12.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:02  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = -1|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:02  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = -1|         26.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:04  | INF | ### | | S23_AoutStUp_Loop, vco_diff = 1|          7.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:04  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = 1|         12.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:04  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = 1|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:04  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = 1|         31.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:33:04  | INF | ### | sample trace out files have been created in ;c:\TempMessdaten\\20211213173155\\AoutStartUp_Loop7_Pos1_module_id_14099_20211213173302.csv
+13-Dec-2021 17:33:05  | INF | ### | | GYRO_STARTUP time         |       28.79ms|   0.00ms  | check only the mean value |
+13-Dec-2021 17:33:05  | INF | ### | | ASIC_temp_start           |     20.94degC| 0.00degC  | ^~temperature taken upon start~^ |
+13-Dec-2021 17:33:05  | INF | ### | | ASIC_temp_end             |     21.09degC| 0.01degC  | ^~temperature taken at the end~^ |
+13-Dec-2021 17:33:05  | INF | ### | 
+13-Dec-2021 17:33:07  | INF | ### | Paranoia power reset (TM)
+13-Dec-2021 17:33:11  | INF | ### | | a_x_G32_stim_zp1g         |        0.51mg|   2.36mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:33:11  | INF | ### | | a_y_G32_stim_zp1g         |        2.50mg|   2.44mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:33:11  | INF | ### | | a_z_G32_stim_zp1g         |      995.43mg|   2.87mg  | 900mg < DC < 1100 mg, AC < 2 mg |
+13-Dec-2021 17:33:12  | INF | ### | | a_x_G16_stim_zp1g         |        3.95mg|   1.61mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:33:12  | INF | ### | | a_y_G16_stim_zp1g         |        2.48mg|   2.13mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:33:12  | INF | ### | | a_z_G16_stim_zp1g         |      995.10mg|   2.46mg  | 900mg < DC < 1100 mg, AC < 2 mg |
+13-Dec-2021 17:33:13  | INF | ### | | a_x_stim_zp1g_pre_bite    |        4.45mg|   1.76mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:33:13  | INF | ### | | a_y_stim_zp1g_pre_bite    |       -6.05mg|   1.69mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:33:13  | INF | ### | | a_z_stim_zp1g_pre_bite    |      989.73mg|   2.09mg  | 980mg < DC < 1020 mg, AC < 2 mg |
+13-Dec-2021 17:33:14  | INF | ### | | a_x_stim_zp1g_bite_sign0  |     4745.82mg|   1.45mg  | 3000mg < DC < 7000 mg |
+13-Dec-2021 17:33:14  | INF | ### | | a_y_stim_zp1g_bite_sign0  |    -4315.04mg|   1.41mg  | -6500mg < DC < -2000 mg |
+13-Dec-2021 17:33:14  | INF | ### | | a_z_stim_zp1g_bite_sign0  |    -3593.05mg|   0.72mg  | -5000mg < DC < -2000 mg |
+13-Dec-2021 17:33:14  | INF | ### | | a_x_stim_zp1g_bite_sign1  |    -4765.08mg|   1.35mg  | -7000mg < DC < -3000 mg |
+13-Dec-2021 17:33:14  | INF | ### | | a_y_stim_zp1g_bite_sign1  |     4080.08mg|   1.67mg  | 2000mg < DC < 6500 mg |
+13-Dec-2021 17:33:14  | INF | ### | | a_z_stim_zp1g_bite_sign1  |     5807.19mg|   1.13mg  | 4000mg < DC < 7000 mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_x_stim_zp1g_post_bite   |        4.80mg|   1.62mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_y_stim_zp1g_post_bite   |       -6.60mg|   1.63mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_z_stim_zp1g_post_bite   |      989.53mg|   2.32mg  | 980mg < DC < 1020 mg, AC < 2 mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_x_stim_zp1g_bite_sum    |      -28.16mg|   0.00mg  | 3750mg < DC < 3750mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_y_stim_zp1g_bite_sum    |     -222.85mg|   0.00mg  | 3750mg < DC < 3750mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_z_stim_zp1g_bite_sum    |      234.69mg|   0.00mg  | 3750mg < DC < 3750mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_x_stim_zp1g_bite_diff   |     9510.90mg|   0.00mg  | 6500mg < DC < 13000mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_y_stim_zp1g_bite_diff   |    -8395.12mg|   0.00mg  | -12000mg < DC < -5500mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_z_stim_zp1g_bite_diff   |    -9400.23mg|   0.00mg  | -11500mg < DC < -7000mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_x_stim_zp1g_prepost_bite|        0.35mg|   0.00mg  | -10 mg < DC < 10mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_y_stim_zp1g_prepost_bite|       -0.55mg|   0.00mg  | -10 mg < DC < 10mg |
+13-Dec-2021 17:33:16  | INF | ### | | a_z_stim_zp1g_prepost_bite|       -0.20mg|   0.00mg  | -10 mg < DC < 10mg |
+13-Dec-2021 17:33:18  | INF | ### | | a_x_S28_SC_Sensor_Mode    |   26848.32LSB|  0.73LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:18  | INF | ### | | a_y_S28_SC_Sensor_Mode    |  -27372.19LSB|  0.81LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:18  | INF | ### | | a_z_S28_SC_Sensor_Mode    |  -26042.27LSB|  0.82LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:19  | INF | ### | | a_x_S28_SC_CBIST          |   24336.84LSB|  1.16LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:19  | INF | ### | | a_y_S28_SC_CBIST          |  -24423.09LSB|  1.07LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:19  | INF | ### | | a_z_S28_SC_CBIST          |  -23756.56LSB|  1.18LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:20  | INF | ### | | NSF_S28_x                 |          0.91|     0.00  | NSF_S28_x |
+13-Dec-2021 17:33:20  | INF | ### | | NSF_S28_y                 |          0.89|     0.00  | NSF_S28_y |
+13-Dec-2021 17:33:20  | INF | ### | | NSF_S28_z                 |          0.91|     0.00  | NSF_S28_z |
+13-Dec-2021 17:33:20  | INF | ### | | a_x_S28_DC_SC_CBIST       |    -580.35LSB|  0.82LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:20  | INF | ### | | a_y_S28_DC_SC_CBIST       |     515.43LSB|  0.80LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:20  | INF | ### | | a_z_S28_DC_SC_CBIST       |     448.24LSB|  0.40LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:20  | INF | ### | | a_x_S28_DC_SC_CBIST_nsf   |          0.75|     0.00  | a_x_S28_DC_SC_CBIST_nsf |
+13-Dec-2021 17:33:20  | INF | ### | | a_y_S28_DC_SC_CBIST_nsf   |          0.71|     0.00  | a_y_S28_DC_SC_CBIST_nsf |
+13-Dec-2021 17:33:20  | INF | ### | | a_z_S28_DC_SC_CBIST_nsf   |          0.36|     0.00  | a_z_S28_DC_SC_CBIST_nsf |
+13-Dec-2021 17:33:21  | INF | ### | | c_odr_trim_current        |         -2.00|     0.00  | c_odr_trim_current |
+13-Dec-2021 17:33:21  | INF | ### | | acc_trm_dgain_s0_y        |   -7403.00LSB|  0.00LSB  | dgain_s0_DC_CBIST_Noise_nsf_S28 |
+13-Dec-2021 17:33:21  | INF | ### | | acc_trm_dgain_s0_z        |   -7403.00LSB|  0.00LSB  | dgain_s0_DC_CBIST_Noise_nsf_S28 |
+13-Dec-2021 17:33:21  | INF | ### | | acc_trm_dgain_s0_x        |   -7403.00LSB|  0.00LSB  | dgain_s0_DC_CBIST_Noise_nsf_S28 |
+13-Dec-2021 17:33:22  | INF | ### | | a_x_S28_DC_CBIST          |    -417.89LSB|  0.63LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:22  | INF | ### | | a_y_S28_DC_CBIST          |     366.25LSB|  0.87LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:22  | INF | ### | | a_z_S28_DC_CBIST          |     329.49LSB|  0.63LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:22  | INF | ### | | tm_acc_ileak              |       1.00LSB|  0.00LSB  | tm_acc_ileak |
+13-Dec-2021 17:33:23  | INF | ### | | a_x_S28_DC_ILEAK_Noise    |    -418.98LSB|  0.53LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:23  | INF | ### | | a_y_S28_DC_ILEAK_Noise    |     366.80LSB|  1.44LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:23  | INF | ### | | a_z_S28_DC_ILEAK_Noise    |     328.98LSB|  1.75LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:23  | INF | ### | | a_x_S28_DC_ILEAK_DIFF     |          1.09|     0.00  | a_x_S28_DC_ILEAK_DIFF |
+13-Dec-2021 17:33:23  | INF | ### | | a_y_S28_DC_ILEAK_DIFF     |         -0.55|     0.00  | a_y_S28_DC_ILEAK_DIFF |
+13-Dec-2021 17:33:23  | INF | ### | | a_z_S28_DC_ILEAK_DIFF     |          0.51|     0.00  | a_z_S28_DC_ILEAK_DIFF |
+13-Dec-2021 17:33:23  | INF | ### | | tm_acc_axis_en            |       5.00LSB|  0.00LSB  | tm_acc_axis_en |
+13-Dec-2021 17:33:24  | INF | ### | | a_x_S28_DC_ILEAK_CH2_Noise|    -419.53LSB|  0.63LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:24  | INF | ### | | a_y_S28_DC_ILEAK_CH2_Noise|  -31999.02LSB|  0.00LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:24  | INF | ### | | a_z_S28_DC_ILEAK_CH2_Noise|     329.02LSB|  1.49LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:33:24  | INF | ### | | a_x_S28_DC_ILEAK_CH2_DIFF |          0.55|     0.00  | a_x_S28_DC_ILEAK_CH2_DIFF |
+13-Dec-2021 17:33:24  | INF | ### | | a_y_S28_DC_ILEAK_CH2_DIFF |      32365.82|     0.00  | a_y_S28_DC_ILEAK_CH2_DIFF |
+13-Dec-2021 17:33:24  | INF | ### | | a_z_S28_DC_ILEAK_CH2_DIFF |         -0.04|     0.00  | a_z_S28_DC_ILEAK_CH2_DIFF |
+13-Dec-2021 17:33:24  | INF | ### | | tm_acc_axis_en            |       7.00LSB|  0.00LSB  | tm_acc_axis_en |
+13-Dec-2021 17:33:26  | SEN | 004 | module_id:13060
+13-Dec-2021 17:33:26  | SEN | 004 | SNR:8df3730c07063304
+13-Dec-2021 17:33:26  | SEN | 004 | USNR:0000H2RW41024004051KY
+13-Dec-2021 17:33:27  | INF | ### | CRC 57025 crc read:57025
+13-Dec-2021 17:33:27  | INF | ### | SensorNr4754
+13-Dec-2021 17:33:27  | INF | ### | 
+13-Dec-2021 17:33:27  | INF | ### | ||      Measurement         ||    Mean    ||      Std     ||  Comment     ||
+13-Dec-2021 17:33:29  | INF | ### | | RATE_X_wodrivewoCM        |      -0.02dps|  0.04dps  | DC <2dps, AC < 0.088dps |
+13-Dec-2021 17:33:29  | INF | ### | | RATE_Y_wodrivewoCM        |       0.05dps|  0.05dps  | DC <2dps, AC < 0.088dps |
+13-Dec-2021 17:33:29  | INF | ### | | RATE_Z_wodrivewoCM        |      -0.02dps|  0.05dps  | DC <2dps, AC < 0.088dps |
+13-Dec-2021 17:33:30  | INF | ### | | Quad_X_wodrivewoCM        |       1.11dps|  0.20dps  | comment |
+13-Dec-2021 17:33:30  | INF | ### | | Quad_Y_wodrivewoCM        |       1.08dps|  0.16dps  | comment |
+13-Dec-2021 17:33:30  | INF | ### | | Quad_Z_wodrivewoCM        |      -0.65dps|  0.90dps  | comment |
+13-Dec-2021 17:33:34  | INF | ### | | CV_D_wodrivewoCM in TADC  |       -6.38mV|   0.09mV  |  |
+13-Dec-2021 17:33:35  | INF | ### | | CV_X_wodrivewoCM in TADC  |      -28.90mV|   0.28mV  |  |
+13-Dec-2021 17:33:37  | INF | ### | | CV_Y_wodrivewoCM in TADC  |       -2.55mV|   0.29mV  |  |
+13-Dec-2021 17:33:38  | INF | ### | | CV_Z_wodrivewoCM in TADC  |       17.78mV|   0.75mV  |  |
+13-Dec-2021 17:33:39  | INF | ### | | RATE_X_wodrivewoCM_s30    |      -27.62mv|  -0.15mv  | pls compare it with CV_X_wodrivewoCM in TADC |
+13-Dec-2021 17:33:39  | INF | ### | | RATE_Y_wodrivewoCM_s30    |       -5.38mv|   0.17mv  | pls compare it with CV_Y_wodrivewoCM in TADC |
+13-Dec-2021 17:33:39  | INF | ### | | RATE_Z_wodrivewoCM_s30    |        8.98mv|  -0.42mv  | pls compare it with CV_Z_wodrivewoCM in TADC |
+13-Dec-2021 17:33:39  | INF | ### | | S30_CV_X_diff_wodrivewoCM |        1.28mv|   0.00mv  |  |
+13-Dec-2021 17:33:39  | INF | ### | | S30_CV_Y_diff_wodrivewoCM |       -2.82mv|   0.00mv  |  |
+13-Dec-2021 17:33:39  | INF | ### | | S30_CV_Z_diff_wodrivewoCM |       -8.81mv|   0.00mv  |  |
+13-Dec-2021 17:33:41  | INF | ### | | RATE_X_wodrivewCM         |      -0.02dps|  0.04dps  | DC <2dps, AC < 0.1dps |
+13-Dec-2021 17:33:41  | INF | ### | | RATE_Y_wodrivewCM         |       0.07dps|  0.06dps  | DC <2dps, AC < 0.1dps |
+13-Dec-2021 17:33:41  | INF | ### | | RATE_Z_wodrivewCM         |      -0.01dps|  0.05dps  | DC <2dps, AC < 0.1dps |
+13-Dec-2021 17:33:44  | INF | ### | | CV_D_wodrivewCM in TADC   |       -6.25mV|   0.08mV  |  |
+13-Dec-2021 17:33:45  | INF | ### | | CV_X_wodrivewCM in TADC   |      -29.27mV|   0.33mV  |  |
+13-Dec-2021 17:33:47  | INF | ### | | CV_Y_wodrivewCM in TADC   |       -2.55mV|   0.38mV  |  |
+13-Dec-2021 17:33:48  | INF | ### | | CV_Z_wodrivewCM in TADC   |       17.87mV|   0.25mV  |  |
+13-Dec-2021 17:33:48  | INF | ### | | CV_D_inTADC_diff          |        0.13mV|   0.00mV  | W/ CM minus W/O CM |
+13-Dec-2021 17:33:48  | INF | ### | | CV_X_inTADC_diff          |       -0.37mV|   0.00mV  | W/ CM minus W/O CM |
+13-Dec-2021 17:33:48  | INF | ### | | CV_Y_inTADC_diff          |        0.01mV|   0.00mV  | W/ CM minus W/O CM |
+13-Dec-2021 17:33:48  | INF | ### | | CV_Z_inTADC_diff          |        0.09mV|   0.00mV  | W/ CM minus W/O CM |
+13-Dec-2021 17:33:49  | INF | ### | | RATE_X_wodrivewCM_s30     |      -27.95mv|  -0.14mv  | pls compare it with CV_X_wodrivewCM in TADC |
+13-Dec-2021 17:33:49  | INF | ### | | RATE_Y_wodrivewCM_s30     |       -5.44mv|   0.21mv  | pls compare it with CV_Y_wodrivewCM in TADC |
+13-Dec-2021 17:33:49  | INF | ### | | RATE_Z_wodrivewCM_s30     |        9.04mv|  -0.44mv  | pls compare it with CV_Z_wdrivewoCM in TADC |
+13-Dec-2021 17:33:49  | INF | ### | | S30_CV_X_diff_wodrivewCM  |        1.32mv|   0.00mv  |  |
+13-Dec-2021 17:33:49  | INF | ### | | S30_CV_Y_diff_wodrivewCM  |       -2.90mv|   0.00mv  |  |
+13-Dec-2021 17:33:49  | INF | ### | | S30_CV_Z_diff_wodrivewCM  |       -8.83mv|   0.00mv  |  |
+13-Dec-2021 17:33:51  | INF | ### | | CM_OFFSET_wodrive in TADC |        9.50mV|   0.05mV  |  |
+13-Dec-2021 17:33:52  | INF | ### | | Aout(4k_en)               |      360.43mV|   1.07mV  | ^~4k_en=1; cp_cvd=0; \\=> value recovered?~^ |
+13-Dec-2021 17:33:53  | INF | ### | | Pout(4k_en)               |      -93.78mV|   0.28mV  | ^~4k_en=1; cp_cvd=0; \\=> value recovered?~^ |
+13-Dec-2021 17:33:53  | INF | ### | | Aout(4k_en & pd_aa)       |      718.75mV|   3.08mV  | ^~4k_en=1; cp_cvd=0; tst_gyr_pd_aa=1 \\ saturation?~^ |
+13-Dec-2021 17:33:54  | INF | ### | | Aout(4k_en & pd_ai)       |      715.58mV|   2.54mV  | ^~4k_en=1; cp_cvd=0; tst_gyr_pd_ai=1 \\ saturation?~^ |
+13-Dec-2021 17:33:55  | INF | ### | | Aout normal mode          |      726.57mV|   2.39mV  | ^~default~^ |
+13-Dec-2021 17:33:55  | INF | ### | | Normal_Rate_x             |       0.35dps|  0.05dps  | comment |
+13-Dec-2021 17:33:55  | INF | ### | | Normal_Rate_y             |       0.01dps|  0.06dps  | comment |
+13-Dec-2021 17:33:56  | INF | ### | | Normal_Rate_z             |      -0.02dps|  0.04dps  | comment |
+13-Dec-2021 17:33:56  | INF | ### | | Pout normal mode          |      -88.99mV|   0.32mV  | ^~default~^ |
+13-Dec-2021 17:33:58  | INF | ### | | CM_OFFSET_normal in TADC  |        9.57mV|   0.04mV  |  |
+13-Dec-2021 17:33:58  | INF | ### | | AoutTrim                  |      730.86mV|   0.00mV  |  |
+13-Dec-2021 17:33:58  | INF | ### | | Aout_s16                  |      726.06mV|   0.00mV  |  |
+13-Dec-2021 17:33:58  | INF | ### | | Aout_rel_dev_s16          |      -0.66pct|  0.00pct  |  |
+13-Dec-2021 17:34:00  | INF | ### | | S31:CM_in_Sens            |        0.05Au|   0.04Au  | comment |
+13-Dec-2021 17:34:01  | INF | ### | | S31:CM_inSens_PD_AI       |        0.60Au|   0.04Au  | comment |
+13-Dec-2021 17:34:02  | INF | ### | | S31:CM_inSens_PD_AA       |       -0.48Au|   0.05Au  | comment |
+13-Dec-2021 17:34:02  | INF | ### | | S31:CM_inSens_PD_AIAA     |        0.06Au|   0.05Au  | comment |
+13-Dec-2021 17:34:04  | INF | ### | | CV_D_in_Sens              |   23676.34LSB|  2.17LSB  | comment |
+13-Dec-2021 17:34:06  | INF | ### | | GYRO_TAU                  |       67.29ms|   0.00ms  | comment |
+13-Dec-2021 17:34:07  | INF | ### | | VCO_freq_measured         |       0.00KHz|  0.00KHz  | it would only work on DKT, get 0 from HMP |
+13-Dec-2021 17:34:07  | INF | ### | | VCO_freq_FT               |      25.44KHz|  0.00KHz  |  |
+13-Dec-2021 17:34:07  | INF | ### | | VCO_freq_dev              |    25437.60Hz|   0.00Hz  | 100Hz dev max, This data will only be available when the FA script run on DKT |
+13-Dec-2021 17:34:08  | INF | ### | | Gyro_rate_raw_x           |      -5.96dps|  0.05dps  | comment |
+13-Dec-2021 17:34:08  | INF | ### | | Gyro_rate_raw_y           |     -19.55dps|  0.06dps  | comment |
+13-Dec-2021 17:34:08  | INF | ### | | Gyro_rate_raw_z           |      -1.74dps|  0.03dps  | comment |
+13-Dec-2021 17:34:09  | INF | ### | | Quad_q2r_res_x            |     305.36dps|  0.07dps  | comment |
+13-Dec-2021 17:34:09  | INF | ### | | Quad_q2r_res_y            |     100.01dps|  1.10dps  | comment |
+13-Dec-2021 17:34:09  | INF | ### | | Quad_q2r_res_z            |    -447.11dps|  0.73dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Rdiff_cvs_x               |       0.46dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Rdiff_cvs_y               |       1.23dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Rdiff_cvs_z               |       0.23dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Qdiff_cvs_x               |   -1809.23dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Qdiff_cvs_y               |   -2061.54dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Qdiff_cvs_z               |    1453.20dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Phase_cvs_x               |     -0.25mrad| 0.00mrad  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Phase_cvs_y               |     -0.59mrad| 0.00mrad  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Phase_cvs_z               |      0.16mrad| 0.00mrad  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Rdiff_x                   |       0.31dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Rdiff_y                   |      -0.79dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Rdiff_z                   |       0.69dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Qdiff_x                   |    -178.61dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Qdiff_y                   |     203.12dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Qdiff_z                   |    -359.88dps|  0.00dps  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Phase_TOSK_x              |     -1.74mrad| 0.00mrad  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Phase_TOSK_y              |     -3.90mrad| 0.00mrad  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Phase_TOSK_z              |     -1.91mrad| 0.00mrad  | comment |
+13-Dec-2021 17:34:16  | INF | ### | | Post_Rate_x               |       0.35dps|  0.05dps  | comment |
+13-Dec-2021 17:34:17  | INF | ### | | Post_Rate_y               |       0.01dps|  0.06dps  | comment |
+13-Dec-2021 17:34:17  | INF | ### | | Post_Rate_z               |      -0.80dps|  0.05dps  | comment |
+13-Dec-2021 17:34:18  | INF | ### | | S23_AoutStUp_Loop, vco_diff = 0|          1.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:18  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = 0|         14.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:18  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = 0|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:18  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = 0|         29.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:20  | INF | ### | | S23_AoutStUp_Loop, vco_diff = -3|          2.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:20  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = -3|         12.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:20  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = -3|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:20  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = -3|         30.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:22  | INF | ### | | S23_AoutStUp_Loop, vco_diff = 3|          3.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:22  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = 3|         15.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:22  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = 3|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:22  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = 3|         33.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:24  | INF | ### | | S23_AoutStUp_Loop, vco_diff = -2|          4.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:24  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = -2|         13.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:24  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = -2|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:24  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = -2|         29.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:25  | INF | ### | | S23_AoutStUp_Loop, vco_diff = 2|          5.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:25  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = 2|         14.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:25  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = 2|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:25  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = 2|         91.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:27  | INF | ### | | S23_AoutStUp_Loop, vco_diff = -1|          6.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:27  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = -1|         14.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:27  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = -1|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:27  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = -1|         28.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:29  | INF | ### | | S23_AoutStUp_Loop, vco_diff = 1|          7.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:29  | INF | ### | | S23:g:OutlierCnt:Scr23, vco_diff = 1|         12.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:29  | INF | ### | | S23:g:TimeIndex:Outlier:first:Scr23, vco_diff = 1|          0.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:29  | INF | ### | | S23:g:TimeIndex:Outlier:last:Scr23, vco_diff = 1|         31.00|     0.00  | S23 -> combo |
+13-Dec-2021 17:34:29  | INF | ### | sample trace out files have been created in ;c:\TempMessdaten\\20211213173155\\AoutStartUp_Loop7_Pos4_module_id_13060_20211213173427.csv
+13-Dec-2021 17:34:30  | INF | ### | | GYRO_STARTUP time         |       29.10ms|   0.00ms  | check only the mean value |
+13-Dec-2021 17:34:31  | INF | ### | | ASIC_temp_start           |     20.08degC| 0.00degC  | ^~temperature taken upon start~^ |
+13-Dec-2021 17:34:31  | INF | ### | | ASIC_temp_end             |     20.23degC| 0.00degC  | ^~temperature taken at the end~^ |
+13-Dec-2021 17:34:31  | INF | ### | 
+13-Dec-2021 17:34:32  | INF | ### | Paranoia power reset (TM)
+13-Dec-2021 17:34:36  | INF | ### | | a_x_G32_stim_zp1g         |       -2.62mg|   2.03mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:34:36  | INF | ### | | a_y_G32_stim_zp1g         |        0.31mg|   2.74mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:34:36  | INF | ### | | a_z_G32_stim_zp1g         |     1000.74mg|   1.98mg  | 900mg < DC < 1100 mg, AC < 2 mg |
+13-Dec-2021 17:34:37  | INF | ### | | a_x_G16_stim_zp1g         |        2.52mg|   1.55mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:34:37  | INF | ### | | a_y_G16_stim_zp1g         |        0.66mg|   1.88mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:34:37  | INF | ### | | a_z_G16_stim_zp1g         |     1001.91mg|   1.95mg  | 900mg < DC < 1100 mg, AC < 2 mg |
+13-Dec-2021 17:34:38  | INF | ### | | a_x_stim_zp1g_pre_bite    |       -1.37mg|   1.38mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:34:38  | INF | ### | | a_y_stim_zp1g_pre_bite    |       -9.22mg|   2.43mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:34:38  | INF | ### | | a_z_stim_zp1g_pre_bite    |      996.52mg|   2.75mg  | 980mg < DC < 1020 mg, AC < 2 mg |
+13-Dec-2021 17:34:39  | INF | ### | | a_x_stim_zp1g_bite_sign0  |     5408.91mg|   1.15mg  | 3000mg < DC < 7000 mg |
+13-Dec-2021 17:34:39  | INF | ### | | a_y_stim_zp1g_bite_sign0  |    -4350.55mg|   1.58mg  | -6500mg < DC < -2000 mg |
+13-Dec-2021 17:34:39  | INF | ### | | a_z_stim_zp1g_bite_sign0  |    -3411.13mg|   1.54mg  | -5000mg < DC < -2000 mg |
+13-Dec-2021 17:34:40  | INF | ### | | a_x_stim_zp1g_bite_sign1  |    -4960.00mg|   1.53mg  | -7000mg < DC < -3000 mg |
+13-Dec-2021 17:34:40  | INF | ### | | a_y_stim_zp1g_bite_sign1  |     4677.07mg|   1.46mg  | 2000mg < DC < 6500 mg |
+13-Dec-2021 17:34:40  | INF | ### | | a_z_stim_zp1g_bite_sign1  |     5517.03mg|   1.47mg  | 4000mg < DC < 7000 mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_x_stim_zp1g_post_bite   |       -0.51mg|   1.44mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_y_stim_zp1g_post_bite   |       -8.44mg|   1.91mg  | -20mg < DC < 20 mg, AC < 2 mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_z_stim_zp1g_post_bite   |      996.76mg|   1.95mg  | 980mg < DC < 1020 mg, AC < 2 mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_x_stim_zp1g_bite_sum    |      451.64mg|   0.00mg  | 3750mg < DC < 3750mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_y_stim_zp1g_bite_sum    |      344.96mg|   0.00mg  | 3750mg < DC < 3750mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_z_stim_zp1g_bite_sum    |      112.85mg|   0.00mg  | 3750mg < DC < 3750mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_x_stim_zp1g_bite_diff   |    10368.91mg|   0.00mg  | 6500mg < DC < 13000mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_y_stim_zp1g_bite_diff   |    -9027.62mg|   0.00mg  | -12000mg < DC < -5500mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_z_stim_zp1g_bite_diff   |    -8928.16mg|   0.00mg  | -11500mg < DC < -7000mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_x_stim_zp1g_prepost_bite|        0.86mg|   0.00mg  | -10 mg < DC < 10mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_y_stim_zp1g_prepost_bite|        0.78mg|   0.00mg  | -10 mg < DC < 10mg |
+13-Dec-2021 17:34:41  | INF | ### | | a_z_stim_zp1g_prepost_bite|        0.23mg|   0.00mg  | -10 mg < DC < 10mg |
+13-Dec-2021 17:34:43  | INF | ### | | a_x_S28_SC_Sensor_Mode    |   25350.47LSB|  0.51LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:43  | INF | ### | | a_y_S28_SC_Sensor_Mode    |  -25848.16LSB|  1.13LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:43  | INF | ### | | a_z_S28_SC_Sensor_Mode    |  -24677.85LSB|  0.81LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:44  | INF | ### | | a_x_S28_SC_CBIST          |   23458.83LSB|  1.22LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:44  | INF | ### | | a_y_S28_SC_CBIST          |  -24141.17LSB|  1.47LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:44  | INF | ### | | a_z_S28_SC_CBIST          |  -22741.91LSB|  1.07LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:45  | INF | ### | | NSF_S28_x                 |          0.93|     0.00  | NSF_S28_x |
+13-Dec-2021 17:34:45  | INF | ### | | NSF_S28_y                 |          0.93|     0.00  | NSF_S28_y |
+13-Dec-2021 17:34:45  | INF | ### | | NSF_S28_z                 |          0.92|     0.00  | NSF_S28_z |
+13-Dec-2021 17:34:45  | INF | ### | | a_x_S28_DC_SC_CBIST       |    -401.02LSB|  0.74LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:45  | INF | ### | | a_y_S28_DC_SC_CBIST       |     491.05LSB|  1.00LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:45  | INF | ### | | a_z_S28_DC_SC_CBIST       |     459.73LSB|  0.71LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:45  | INF | ### | | a_x_S28_DC_SC_CBIST_nsf   |          0.68|     0.00  | a_x_S28_DC_SC_CBIST_nsf |
+13-Dec-2021 17:34:45  | INF | ### | | a_y_S28_DC_SC_CBIST_nsf   |          0.94|     0.00  | a_y_S28_DC_SC_CBIST_nsf |
+13-Dec-2021 17:34:45  | INF | ### | | a_z_S28_DC_SC_CBIST_nsf   |          0.65|     0.00  | a_z_S28_DC_SC_CBIST_nsf |
+13-Dec-2021 17:34:46  | INF | ### | | c_odr_trim_current        |          0.00|     0.00  | c_odr_trim_current |
+13-Dec-2021 17:34:46  | INF | ### | | acc_trm_dgain_s0_y        |   -7475.00LSB|  0.00LSB  | dgain_s0_DC_CBIST_Noise_nsf_S28 |
+13-Dec-2021 17:34:46  | INF | ### | | acc_trm_dgain_s0_z        |   -7475.00LSB|  0.00LSB  | dgain_s0_DC_CBIST_Noise_nsf_S28 |
+13-Dec-2021 17:34:46  | INF | ### | | acc_trm_dgain_s0_x        |   -7475.00LSB|  0.00LSB  | dgain_s0_DC_CBIST_Noise_nsf_S28 |
+13-Dec-2021 17:34:47  | INF | ### | | a_x_S28_DC_CBIST          |    -298.59LSB|  0.43LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:47  | INF | ### | | a_y_S28_DC_CBIST          |     352.54LSB|  0.56LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:47  | INF | ### | | a_z_S28_DC_CBIST          |     349.26LSB|  0.48LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:47  | INF | ### | | tm_acc_ileak              |       1.00LSB|  0.00LSB  | tm_acc_ileak |
+13-Dec-2021 17:34:48  | INF | ### | | a_x_S28_DC_ILEAK_Noise    |    -297.54LSB|  0.61LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:48  | INF | ### | | a_y_S28_DC_ILEAK_Noise    |     351.80LSB|  1.10LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:48  | INF | ### | | a_z_S28_DC_ILEAK_Noise    |     347.42LSB|  1.67LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:48  | INF | ### | | a_x_S28_DC_ILEAK_DIFF     |         -1.05|     0.00  | a_x_S28_DC_ILEAK_DIFF |
+13-Dec-2021 17:34:48  | INF | ### | | a_y_S28_DC_ILEAK_DIFF     |          0.74|     0.00  | a_y_S28_DC_ILEAK_DIFF |
+13-Dec-2021 17:34:48  | INF | ### | | a_z_S28_DC_ILEAK_DIFF     |          1.84|     0.00  | a_z_S28_DC_ILEAK_DIFF |
+13-Dec-2021 17:34:48  | INF | ### | | tm_acc_axis_en            |       5.00LSB|  0.00LSB  | tm_acc_axis_en |
+13-Dec-2021 17:34:48  | INF | ### | | a_x_S28_DC_ILEAK_CH2_Noise|    -297.93LSB|  0.48LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:48  | INF | ### | | a_y_S28_DC_ILEAK_CH2_Noise|  -31999.02LSB|  0.00LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:48  | INF | ### | | a_z_S28_DC_ILEAK_CH2_Noise|     347.38LSB|  1.31LSB  | X < DC < X, AC < X |
+13-Dec-2021 17:34:48  | INF | ### | | a_x_S28_DC_ILEAK_CH2_DIFF |          0.39|     0.00  | a_x_S28_DC_ILEAK_CH2_DIFF |
+13-Dec-2021 17:34:48  | INF | ### | | a_y_S28_DC_ILEAK_CH2_DIFF |      32350.82|     0.00  | a_y_S28_DC_ILEAK_CH2_DIFF |
+13-Dec-2021 17:34:48  | INF | ### | | a_z_S28_DC_ILEAK_CH2_DIFF |          0.04|     0.00  | a_z_S28_DC_ILEAK_CH2_DIFF |
+13-Dec-2021 17:34:49  | INF | ### | | tm_acc_axis_en            |       7.00LSB|  0.00LSB  | tm_acc_axis_en |
+13-Dec-2021 17:34:49  | FRM | ### | Wait TDMS writeprocess ...
+13-Dec-2021 17:34:50  | FRM | ### | TDMS writeprocess completed.
+13-Dec-2021 17:34:50  | FRM | 001 | TDMS Defragmentation file pos 1
+13-Dec-2021 17:34:50  | FRM | 004 | TDMS Defragmentation file pos 4
+13-Dec-2021 17:34:50  | FRM | ### | Test completed: \\rt02fs07.de.bosch.com\laborpplib$\profile_bst\BMI284\00_Engineering\FailureAnalysis\bai284aa_FA_v0.77.lua
+13-Dec-2021 17:34:50  | FRM | ### | ----------------------------------------------------------------------------
+13-Dec-2021 17:34:50  | FRM | ### | Complete duration: 0.05 hours
+13-Dec-2021 17:34:50  | FRM | ### | ----------------------------------------------------------------------------

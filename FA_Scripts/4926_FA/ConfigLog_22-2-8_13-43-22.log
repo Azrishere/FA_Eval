@@ -1,0 +1,112 @@
+[13:38:52]: 
+[13:38:52]: Start Initialization
+[13:38:52]: 02-08-2022
+[13:38:52]: 
+[13:38:52]: [-- Batch copy info --] 
+
+[13:38:52]: VERSION_GLOBAL                     72_alpha_Arrakis 
+
+[13:38:53]: VERSION_FRAME                      RC\RC_V4.0.0.12\x32 
+
+[13:38:53]: VERSION_HLDRV_POWERSUPPLY          V0.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_XNET                 V1.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_CAN                  V1.2.1.3 
+
+[13:38:53]: VERSION_HLDRV_DLM                  V0.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_DIO                  V0.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_TEMPERATURE          V0.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_ANTRIEB              V1.1.2.2 
+
+[13:38:53]: VERSION_HLDRV_MIO                  V0.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_ZENTRIFUGE           V0.6.0.0 
+
+[13:38:53]: VERSION_HLDRV_ZENTRIFUGE_CSHARP    V2.0.0.8 
+
+[13:38:53]: VERSION_HLDRV_FUNCGEN              RC\V1.1.0.0 
+
+[13:38:53]: VERSION_HLDRV_SCANNER              V1.2.0.0 
+
+[13:38:53]: VERSION_HLDRV_MM                   V1.2.0.0_RC 
+
+[13:38:53]: VERSION_HLDRV_HYPERCUBE            V1.4.3.0 
+
+[13:38:53]: VERSION_HLDRV_BENDER               V1.0.0.0 
+
+[13:38:53]: VERSION_HLDRV_BSI                  V1.3.5.0 
+
+[13:38:53]: VERSION_HLDRV_BST_APP_BOARD         
+
+[13:38:53]: VERSION_NTTIMER                    V1.0.0.0 
+
+[13:38:53]: VERSION_TEC_CONTROLLER             V1.0.0.0 
+
+[13:38:53]: VERSION_SCHNALZTESTER              V0.0.0.2 
+
+[13:38:53]: VERSION_HLDRV_GPIB                 V1.1.0.1_RC 
+
+[13:38:53]: VERSION_SENSOR                     v1.1.11.0_alpha_Arrakis 
+
+[13:38:53]: VERSION_BENDING                    V1.1.0.0 
+
+[13:38:53]: 
+[13:38:54]: Selected device: GYRO CUBE MOTHERBOARD
+[13:38:54]: 
+[13:38:54]: Start Device Load
+[13:38:54]: Check CAN0...ok.
+[13:38:54]: Initializing measurement channels...
+[13:38:54]: ..ok. Found 149 channels.
+[13:38:54]: CAN0 initialized
+[13:38:56]: MiniCan #0x1b96a2 - InterfaceBoard V10 - found
+[13:38:56]: MiniCan: CAN error delay setting = 255
+[13:38:56]: MiniCan: CAN error handler  setting = 255, (0:enabled, 1:disabled)
+[13:38:56]: MiniCan HW version: 0xff, SW version: 0xbe, return code(s): 0
+[13:38:56]: MiniCan: CAN error handler disabled!
+[13:39:10]: SPI2CAN ID 0x72 - SW Version 0x71, HW Version 0x61
+[13:39:10]: SPI2CAN(s) support(s) SPI burst read
+[13:39:10]: SPI2CAN(s) support(s) SPI burst write
+[13:39:10]: End Device Load
+[13:39:10]: 
+[13:39:10]: Config Device - Status Summary
+[13:39:10]: WARNING: If your sensor needs 2 chip selects ensure that you have a motherboard V3!
+[13:39:11]: Number of Warnings: 1
+[13:39:11]: Number of Errors: 0
+[13:39:12]: Device features successfully added to menu.
+[13:39:12]: 
+[13:39:13]: Start Sensor Load
+[13:39:13]: Selected type: BMI284
+[13:39:13]: Selected sample: CA
+[13:39:13]: component BAI284, sample CA.
+[13:39:13]: Reading com settings from ini file...
+[13:39:14]: BAI284 sensor setup file successfully loaded.
+[13:39:14]: BAI284: Configuring power supply setup via ini-file.
+[13:39:14]: 
+[13:39:14]: External Config Files
+[13:39:14]: Component 
+[13:39:14]: Spi2Can Commands
+[13:39:14]: _config\\bai284_rev-ca.conf
+[13:39:14]: Memory Map
+[13:39:14]: _memory_maps\\BAI284_AddrMap.xml
+[13:39:14]: Sensor Setup
+[13:39:15]: _config\\bai284_rev-ca_spi2can_extraction_config.ini
+[13:39:15]: Adding memory map to SCC-group list...
+[13:39:15]: ...ok.
+[13:39:15]: Generating MG list from SCC-group list...
+[13:39:15]: ...ok.
+[13:39:15]: BAI284 Signal re-routing of ODR_INT (Src:Dest->INT1:MM, MT->FREQUENCY, MCh->)
+[13:39:15]: Signal routing completed.
+[13:39:15]: Added measurement parameters of component to MG list.
+[13:39:15]: Power setup successfully completed.
+[13:39:15]: Setup of chip select lines not required.
+[13:39:15]: 
+[13:39:15]: End Initialization
+[13:39:21]: Device error: cannot measure PS1 voltage on triax cube motherboard.
+[13:39:21]: Device error: cannot measure PS1 current on triax cube motherboard.
+[13:39:21]: Device error: cannot measure PS2 voltage on triax cube motherboard.
+[13:39:21]: Device error: cannot measure PS2 current on triax cube motherboard.
+

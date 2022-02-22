@@ -1,0 +1,153 @@
+[15:34:06]: 
+[15:34:06]: Start Initialization
+[15:34:06]: 12-01-2021
+[15:34:07]: 
+[15:34:07]: [-- Batch copy info --] 
+
+[15:34:07]: VERSION_GLOBAL                     72_alpha_Arrakis 
+
+[15:34:07]: VERSION_FRAME                      RC\RC_V4.0.0.12\x32 
+
+[15:34:07]: VERSION_HLDRV_POWERSUPPLY          V0.0.0.0 
+
+[15:34:07]: VERSION_HLDRV_XNET                 V1.0.0.0 
+
+[15:34:07]: VERSION_HLDRV_CAN                  V1.2.1.3 
+
+[15:34:07]: VERSION_HLDRV_DLM                  V0.0.0.0 
+
+[15:34:07]: VERSION_HLDRV_DIO                  V0.0.0.0 
+
+[15:34:07]: VERSION_HLDRV_TEMPERATURE          V0.0.0.0 
+
+[15:34:07]: VERSION_HLDRV_ANTRIEB              V1.1.2.2 
+
+[15:34:07]: VERSION_HLDRV_MIO                  V0.0.0.0 
+
+[15:34:07]: VERSION_HLDRV_ZENTRIFUGE           V0.6.0.0 
+
+[15:34:07]: VERSION_HLDRV_ZENTRIFUGE_CSHARP    V2.0.0.8 
+
+[15:34:07]: VERSION_HLDRV_FUNCGEN              RC\V1.1.0.0 
+
+[15:34:07]: VERSION_HLDRV_SCANNER              V1.2.0.0 
+
+[15:34:07]: [-- Batch copy info --] 
+
+[15:34:07]: VERSION_HLDRV_MM                   V1.2.0.0_RC 
+
+[15:34:07]: VERSION_GLOBAL                     72_alpha_Arrakis 
+
+[15:34:07]: VERSION_HLDRV_HYPERCUBE            V1.4.3.0 
+
+[15:34:07]: VERSION_FRAME                      RC\RC_V4.0.0.12\x32 
+
+[15:34:07]: VERSION_HLDRV_BENDER               V1.0.0.0 
+
+[15:34:08]: VERSION_HLDRV_POWERSUPPLY          V0.0.0.0 
+
+[15:34:08]: VERSION_HLDRV_BSI                  V1.3.5.0 
+
+[15:34:08]: VERSION_HLDRV_XNET                 V1.0.0.0 
+
+[15:34:08]: VERSION_HLDRV_BST_APP_BOARD         
+
+[15:34:08]: VERSION_HLDRV_CAN                  V1.2.1.3 
+
+[15:34:08]: VERSION_HLDRV_DLM                  V0.0.0.0 
+
+[15:34:08]: VERSION_HLDRV_DIO                  V0.0.0.0 
+
+[15:34:08]: VERSION_HLDRV_TEMPERATURE          V0.0.0.0 
+
+[15:34:08]: VERSION_HLDRV_ANTRIEB              V1.1.2.2 
+
+[15:34:08]: VERSION_HLDRV_MIO                  V0.0.0.0 
+
+[15:34:08]: VERSION_HLDRV_ZENTRIFUGE           V0.6.0.0 
+
+[15:34:08]: VERSION_HLDRV_ZENTRIFUGE_CSHARP    V2.0.0.8 
+
+[15:34:08]: VERSION_HLDRV_FUNCGEN              RC\V1.1.0.0 
+
+[15:34:08]: VERSION_HLDRV_SCANNER              V1.2.0.0 
+
+[15:34:08]: VERSION_HLDRV_MM                   V1.2.0.0_RC 
+
+[15:34:08]: VERSION_HLDRV_HYPERCUBE            V1.4.3.0 
+
+[15:34:09]: VERSION_HLDRV_BENDER               V1.0.0.0 
+
+[15:34:09]: VERSION_HLDRV_BSI                  V1.3.5.0 
+
+[15:34:09]: VERSION_HLDRV_BST_APP_BOARD         
+
+[15:34:09]: VERSION_NTTIMER                    V1.0.0.0 
+
+[15:34:09]: VERSION_TEC_CONTROLLER             V1.0.0.0 
+
+[15:34:09]: VERSION_SCHNALZTESTER              V0.0.0.2 
+
+[15:34:09]: VERSION_HLDRV_GPIB                 V1.1.0.1_RC 
+
+[15:34:09]: VERSION_SENSOR                     v1.1.11.0_alpha_Arrakis 
+
+[15:34:09]: VERSION_BENDING                    V1.1.0.0 
+
+[15:34:09]: 
+[15:34:09]: Selected device: GYRO CUBE MOTHERBOARD
+[15:34:09]: 
+[15:34:10]: Start Device Load
+[15:34:10]: Check CAN0...ok.
+[15:34:10]: Initializing measurement channels...
+[15:34:10]: ..ok. Found 149 channels.
+[15:34:10]: CAN0 initialized
+[15:34:12]: MiniCan #0x1b96a2 - InterfaceBoard V10 - found
+[15:34:12]: MiniCan: CAN error delay setting = 255
+[15:34:12]: MiniCan: CAN error handler  setting = 255, (0:enabled, 1:disabled)
+[15:34:12]: MiniCan HW version: 0xff, SW version: 0xbe, return code(s): 0
+[15:34:12]: MiniCan: CAN error handler disabled!
+[15:34:27]: SPI2CAN ID 0x72 - SW Version 0x71, HW Version 0x61
+[15:34:27]: SPI2CAN(s) support(s) SPI burst read
+[15:34:27]: SPI2CAN(s) support(s) SPI burst write
+[15:34:27]: End Device Load
+[15:34:27]: 
+[15:34:27]: Config Device - Status Summary
+[15:34:28]: WARNING: If your sensor needs 2 chip selects ensure that you have a motherboard V3!
+[15:34:28]: Number of Warnings: 1
+[15:34:28]: Number of Errors: 0
+[15:35:06]: Device features successfully added to menu.
+[15:35:06]: 
+[15:35:06]: Start Sensor Load
+[15:35:06]: Selected type: BMI284
+[15:35:06]: Selected sample: CA
+[15:35:06]: component BAI284, sample CA.
+[15:35:07]: Reading com settings from ini file...
+[15:35:08]: BAI284 sensor setup file successfully loaded.
+[15:35:09]: BAI284: Configuring power supply setup via ini-file.
+[15:35:09]: 
+[15:35:09]: External Config Files
+[15:35:09]: Component 
+[15:35:09]: Spi2Can Commands
+[15:35:09]: _config\\bai284_rev-ca.conf
+[15:35:09]: Memory Map
+[15:35:09]: _memory_maps\\BAI284_AddrMap.xml
+[15:35:09]: Sensor Setup
+[15:35:09]: _config\\bai284_rev-ca_spi2can_extraction_config.ini
+[15:35:09]: Adding memory map to SCC-group list...
+[15:35:09]: ...ok.
+[15:35:09]: Generating MG list from SCC-group list...
+[15:35:09]: ...ok.
+[15:35:09]: BAI284 Signal re-routing of ODR_INT (Src:Dest->INT1:MM, MT->FREQUENCY, MCh->)
+[15:35:09]: Signal routing completed.
+[15:35:10]: Added measurement parameters of component to MG list.
+[15:35:10]: Power setup successfully completed.
+[15:35:10]: Setup of chip select lines not required.
+[15:35:10]: 
+[15:35:10]: End Initialization
+[15:35:13]: Device error: cannot measure PS1 voltage on triax cube motherboard.
+[15:35:13]: Device error: cannot measure PS1 current on triax cube motherboard.
+[15:35:13]: Device error: cannot measure PS2 voltage on triax cube motherboard.
+[15:35:13]: Device error: cannot measure PS2 current on triax cube motherboard.
+[15:37:53]: Error: no decay signal to fit tau
+
