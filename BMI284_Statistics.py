@@ -11,11 +11,16 @@ Sensor = '0000H2MH42021035014KY'
 compareToRef = 0
 compareToAll = 0
 
+print(f'\nLoading Database... \n ')
 faDB = pd.read_csv(dataPath, index_col='USNR')
 conv = pd.read_csv(conversionPath)
+print(f'done \n')
 
+print(f'Loading Data for the Sensor     USNR: {Sensor} \n')
 data = faDB.loc[Sensor]
+print(f'done \n')
 
+print(f'Evaluating Data:')
 for index, Measurement in conv.iterrows():
     para = conv.iloc[index]
     Meas = para['Measurement']
@@ -46,13 +51,13 @@ for index, Measurement in conv.iterrows():
         #print(f'{Meas} = {ConvMean} : is in Spec')
         continue
     elif ConvMean < para['Min']:
-        print(f'{Meas} = {ConvMean} : Mean is too low')
+        print(f'{Meas} = {ConvMean} :       Mean is too low')
     else:
-        print(f'{Meas} = {ConvMean} : Mean is too high') 
+        print(f'{Meas} = {ConvMean} :       Mean is too high') 
 
     if ConvStd < para['Std_max'] or ConvStd == 0:
         #print(f'{Meas} = {ConvMean} : is in Spec')
         continue
     else:
         print(f'{Meas} = {ConvStd} : Noise is too high') 
-print('All other Values are in Spec')
+print('\n --------------------All other Gyro Values are in Spec-------------------- \n')
