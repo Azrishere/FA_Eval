@@ -5,8 +5,11 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-dataPath = 'BMI284_DB.csv'
-conversionPath = 'BMI284_conversion.csv'
+# Path for the Databases:
+#------------------------
+dataPath = 'BMI284_DB.csv'                  
+conversionPath = 'BMI284_conversion.csv'    #Database for the Values to check, conversion factors and the Spec 
+
 Sensor = '0000H2HP71007007026KY'
 checkSensor = 1
 compareToRef = 0
@@ -24,7 +27,7 @@ def loadData():
     print(f'done \n')
     return data
 
-def evaluateData(data, Measurement):
+def evaluateData(data):
     print(f'Evaluating Data:')
     for index, Measurement in conv.iterrows():
         para = conv.iloc[index]
@@ -71,4 +74,4 @@ def evaluateData(data, Measurement):
 
 if checkSensor == 1:
     SensorData = loadData()
-    evaluateData(SensorData, conv['Measurement'])
+    evaluateData(SensorData)
