@@ -94,6 +94,8 @@ for i, tdms in tdmsList.iterrows(): # iterate through all found files
         df = reorder_columns(df,'USNR')
     df = reorder_columns(df,'SensorNr')
 
+    df = df.drop(labels='', axis = 0)
+    
     if faDb.size == 0: # If this is the first file that we are parsing
         faDb = df
     else:
