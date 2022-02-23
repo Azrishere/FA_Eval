@@ -2,6 +2,7 @@
 # Date :        13.02.2022
 # Description:  Script for statistical analysis of BMI284 sensors
 
+from rich import print
 from matplotlib import pyplot as plt
 import pandas as pd
 
@@ -56,18 +57,18 @@ def evaluateData(data):
         if 'CV_D_in_Sens' == Meas:
             ConvMean = abs(ConvMean)
         if ConvMean > para['Min'] and ConvMean < para['Max']:
-            #print(f'{Meas} = {ConvMean} : is in Spec')
+            print('{0:28} = {1:20} : {2:40}'.format(Meas, ConvMean, 'is in Spec'))
             continue
         elif ConvMean < para['Min']:
-            print(f'{Meas} = {ConvMean} :       Mean is too low')
+            print('{0:28} = {1:20} : {2:40}'.format(Meas, ConvMean, '[red]Mean is too low[/]')) 
         else:
-            print(f'{Meas} = {ConvMean} :       Mean is too high') 
+            print('{0:28} = {1:20} : {2:40}'.format(Meas, ConvMean, '[red]Mean is too high[/]')) 
 
         if ConvStd < para['Std_max'] or ConvStd == 0:
-            #print(f'{Meas} = {ConvMean} : is in Spec')
+            print('{0:28} = {1:20} : {2:40}'.format(Meas, ConvStd, 'is in Spec'))
             continue
         else:
-            print(f'{Meas} = {ConvStd} : Noise is too high') 
+            print('{0:28} = {1:20} : {2:20}'.format(Meas, ConvStd, '[yellow]Noise is too high[/]'))  
     print('\n --------------------All other Values are in Spec-------------------- \n')
 
 
