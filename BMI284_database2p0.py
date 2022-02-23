@@ -8,37 +8,16 @@
 # Run with Python 3!
 #------------------------------------------------------------------------------
 
-
-#import glob
-#import os 
-#import pathlib
-import math
 from nptdms import TdmsFile as td
-#import numpy as np
 import pandas as pd
 from collections import OrderedDict
-#import ftQuery
-#import trQuery
 
 #------------------------------------------------------------------------------
 # CONFIG
 #------------------------------------------------------------------------------
 
-
 # where to store the database with all the failure analysis data
-csvFilePath = 'BMI284_DB.csv' # try reusing existing data in xlsxFilePath?#reuse_xlsx = False
-
-#def rename_v2_v3(df):
-#    conv = pd.read_table('namingConversion_v2_v3.tsv')
-#    convDict=conv.set_index('v2').to_dict('dict')['v3']
-#    df=df.rename(columns=convDict)
-#    # rename ac values
-#    conv_ac = conv
-#    conv_ac['v2']=conv_ac['v2'].astype(str)+':ac'
-#    conv_ac['v3']=conv_ac['v3'].astype(str)+':ac'
-#    convDict_ac=conv_ac.set_index('v2').to_dict('dict')['v3']
-#    df=df.rename(columns=convDict_ac)
-#    return df
+csvFilePath = 'BMI284_DB.csv'
 
 def reorder_columns(dataframe, col_name, position=0):
     """Reorder a dataframe's column.
