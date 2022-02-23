@@ -14,10 +14,11 @@ conversionPath = 'BMI284_conversion.csv'    #Database for the Values to check, c
 
 #Settings:
 #---------
-Sensor = '0000H2HP71007007026KY'
-checkSensor = 1
+Sensor = '0000H2NH52019028050KY'
+checkSensor = 0
 compareToRef = 0
 compareToAll = 0
+testMultiple = 1
 
 
 #Init the Databases:      
@@ -26,14 +27,25 @@ compareToAll = 0
 print(f'\nLoading Database... \n ')
 faDB = pd.read_csv(dataPath, index_col='USNR')
 conv = pd.read_csv(conversionPath)
+data = faDB.loc[Sensor]
 print(f'done \n')
 
 
 #Definition of Functions:
 #-------------------------
+def checkMultiple():
+    print('Multiple Sensors with this USNR found')
+    print(data)
+    selection = input('Wich of the Listed Sensors should be used? \n Pos Number:      ')
+    selData = data.iloc[selection]
+    Sensor = selData['name']
+    print(Sensor)
+    return 0            #not working
 
 ## Loads the Data of a Sensor with given ID
-def loadData():                  
+def loadData():
+    if data.shape[0] > 1:
+        Sensor = checkMultiple(Sensor)              
     print(f'Loading Data for the Sensor     USNR: {Sensor} \n')
     data = faDB.loc[Sensor]
     print(f'done \n')
@@ -94,3 +106,6 @@ def evaluateData(data):
 if checkSensor == 1:
     SensorData = loadData()
     evaluateData(SensorData)
+
+if testMultiple == 1:
+    testVar = checkMultiple()
