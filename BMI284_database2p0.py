@@ -62,9 +62,6 @@ tdmsList=pd.read_csv('faFileList.csv')
 
 faDb = pd.DataFrame() # create empty failure analysis database
 
-#if queryFTdata:
-#    ftCnxn = ftQuery.connectToFT() # connect to final test database and store its connection pointer
-
 #------------------------------------------------------------------------------
 # Iterate through all found files
 #------------------------------------------------------------------------------
@@ -91,22 +88,7 @@ for i, tdms in tdmsList.iterrows(): # iterate through all found files
     for key, val, std in zip(Messgroesse,Messwert,StdAbw):
         # add the dc values:
         data.update({key:val})
-        # add the ac values
-#        key=key+':ac'
-#        if std == 0.0: # replace zero StdDev
-#            std = math.nan
-#        data.update({key:std})
 
-
-#    --------------------
-#     add final test data (only if USNR is available!)
-#    --------------------
-#    if 'USNR' in metadata and queryFTdata:
-#        USNR = metadata['USNR']
-#        ftData = ftQuery.getFTdata(ftCnxn,USNR)
-#        data.update(ftData[['testname','testvalue']].values)
-#        lot_id = ftQuery.getLotId(ftCnxn,USNR)
-#        data.update({'lot_id':lot_id})
 #     add metadata
     data.update(metadata)
 
@@ -123,14 +105,11 @@ for i, tdms in tdmsList.iterrows(): # iterate through all found files
     df['SensorNr']=df['SensorNr'].astype(int)
     
     # put some important columns at the beginning
+    df = reorder_columns(df,'comment')
+    df = reorder_columns(df,'Remeas')
     if 'USNR' in metadata: 
         df = reorder_columns(df,'USNR')
     df = reorder_columns(df,'SensorNr')
-
-    # convert naming conventions from v2 to v3
-    # if metadata['Kommentar'][0:6] == 'fa_v2.':
-#    if 'A_out' in df.columns: # A_out was in the old naming convention
-#        df = rename_v2_v3(df)
 
     if faDb.size == 0: # If this is the first file that we are parsing
         faDb = df
