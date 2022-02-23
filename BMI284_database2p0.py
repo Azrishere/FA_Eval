@@ -60,35 +60,19 @@ for i, tdms in tdmsList.iterrows(): # iterate through all found files
       
     MgIdx = tdms_file['Messgroessen']['Index'][:]
     MgMg = tdms_file['Messgroessen']['Messgroesse'][:]
-#    MgE = tdms_file['Messgroessen']['Einheit'][:]
     dicMg = dict(zip(MgIdx, MgMg))
-    
-#    MbIdx = tdms_file['Messblock']['Index'][:]
-#    MbMb = tdms_file['Messblock']['Messblock'][:]
-#    dicMb = dict(zip(MbIdx, MbMb))
     
     DataIdxMg = tdms_file['Messungen']['Index_Messgroesse'][:]
     DataNameMg = [dicMg[i] for i in DataIdxMg]
-    
-#    DataIdxMb = tdms_file['Messungen']['Index_Messblock'][:]
-#    DataNameMb = [dicMb[i] for i in DataIdxMb]
-    
-#    data = tdms_file['Messungen'].as_dataframe()
-#    data['Index_Messblock'] = DataNameMb
-#    data['Index_Messgroesse'] = DataNameMg
-#    data = data.drop(labels='Index', axis = 1) 
 
- 
-#    Messgroesse = tdms_file['Messgroessen']['Messgroesse'].data
-    Messwert =    tdms_file['Messungen']['Messwert'].data
+    Messwert = tdms_file['Messungen']['Messwert'].data
 
-#
     ## Insert the Messgroesse, Messwert and StdDev in a dictionary
     for key, val in zip(DataNameMg,Messwert):
         # add the dc values:
         data.update({key:val})
 
-#     add metadata
+    # add metadata
     data.update(metadata)
 
     # add folder name

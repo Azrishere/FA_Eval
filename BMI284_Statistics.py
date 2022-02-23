@@ -7,7 +7,7 @@ import pandas as pd
 
 dataPath = 'BMI284_DB.csv'
 conversionPath = 'BMI284_conversion.csv'
-Sensor = '0000H6K250004036038KY'
+Sensor = '0000H2HP71007007026KY'
 compareToRef = 0
 compareToAll = 0
 
