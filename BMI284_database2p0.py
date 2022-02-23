@@ -57,14 +57,34 @@ for i, tdms in tdmsList.iterrows(): # iterate through all found files
 
     # add readouts
     tdms_file=td.read(file)
-    Messgroesse = tdms_file['Messgroessen']['Messgroesse'].data
-    Messwert =    tdms_file['Messungen']['Messwert'].data
-    StdAbw =      tdms_file['Messungen']['StdAbw'].data
-    Zeit =        tdms_file['Messungen']['Zeit'].data
-    Einheit =     tdms_file['Messgroessen']['Einheit'].data
+      
+    MgIdx = tdms_file['Messgroessen']['Index'][:]
+    MgMg = tdms_file['Messgroessen']['Messgroesse'][:]
+#    MgE = tdms_file['Messgroessen']['Einheit'][:]
+    dicMg = dict(zip(MgIdx, MgMg))
+    
+#    MbIdx = tdms_file['Messblock']['Index'][:]
+#    MbMb = tdms_file['Messblock']['Messblock'][:]
+#    dicMb = dict(zip(MbIdx, MbMb))
+    
+    DataIdxMg = tdms_file['Messungen']['Index_Messgroesse'][:]
+    DataNameMg = [dicMg[i] for i in DataIdxMg]
+    
+#    DataIdxMb = tdms_file['Messungen']['Index_Messblock'][:]
+#    DataNameMb = [dicMb[i] for i in DataIdxMb]
+    
+#    data = tdms_file['Messungen'].as_dataframe()
+#    data['Index_Messblock'] = DataNameMb
+#    data['Index_Messgroesse'] = DataNameMg
+#    data = data.drop(labels='Index', axis = 1) 
 
-    # Insert the Messgroesse, Messwert and StdDev in a dictionary
-    for key, val, std in zip(Messgroesse,Messwert,StdAbw):
+ 
+#    Messgroesse = tdms_file['Messgroessen']['Messgroesse'].data
+    Messwert =    tdms_file['Messungen']['Messwert'].data
+
+#
+    ## Insert the Messgroesse, Messwert and StdDev in a dictionary
+    for key, val in zip(DataNameMg,Messwert):
         # add the dc values:
         data.update({key:val})
 
