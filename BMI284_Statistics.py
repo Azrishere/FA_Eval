@@ -2,19 +2,26 @@
 # Date :        13.02.2022
 # Description:  Script for statistical analysis of BMI284 sensors
 
-from rich import print
-from matplotlib import pyplot as plt
 import pandas as pd
+from matplotlib import pyplot as plt
+from rich import print                      # type: ignore
 
 # Path for the Databases:
 #------------------------
 dataPath = 'BMI284_DB.csv'                  
 conversionPath = 'BMI284_conversion.csv'    #Database for the Values to check, conversion factors and the Spec 
 
+
+#Settings:
+#---------
 Sensor = '0000H2HP71007007026KY'
 checkSensor = 1
 compareToRef = 0
 compareToAll = 0
+
+#------------------------#
+#Init the Databases      #
+#------------------------#
 
 print(f'\nLoading Database... \n ')
 faDB = pd.read_csv(dataPath, index_col='USNR')
