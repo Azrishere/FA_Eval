@@ -19,9 +19,9 @@ checkSensor = 1
 compareToRef = 0
 compareToAll = 0
 
-#------------------------#
-#Init the Databases      #
-#------------------------#
+
+#Init the Databases:      
+#--------------------
 
 print(f'\nLoading Database... \n ')
 faDB = pd.read_csv(dataPath, index_col='USNR')
@@ -29,18 +29,24 @@ conv = pd.read_csv(conversionPath)
 print(f'done \n')
 
 
-def loadData():
+#Definition of Functions:
+#-------------------------
+
+## Loads the Data of a Sensor with given ID
+def loadData():                  
     print(f'Loading Data for the Sensor     USNR: {Sensor} \n')
     data = faDB.loc[Sensor]
     print(f'done \n')
     return data
 
+## Data Conversion and FA like Output with markup of suspicious Values
 def evaluateData(data):
     print(f'Evaluating Data:')
-    for index, Measurement in conv.iterrows():
+    for index, Measurement in conv.iterrows():    
         para = conv.iloc[index]
         Meas = para['Measurement']
-        if 'AIAA' in Meas:
+        #calculate Values for CM_inSens Parameters
+        if 'AIAA' in Meas:                        
             MeasMean = data['g:rate_x:CM_inSens_PD_AIAA_pos:mean'] - data['g:rate_x:CM_inSens_PD_AIAA_neg:mean']
             MeasStd = data['g:rate_x:CM_inSens_PD_AIAA_pos:std'] - data['g:rate_x:CM_inSens_PD_AIAA_neg:std']
         elif 'AI' in Meas:
@@ -54,15 +60,19 @@ def evaluateData(data):
             MeasStd = data['g:rate_x:CM_in_Sens_pos:std'] - data['g:rate_x:CM_in_Sens_neg:std']
         else:    
             MeasMean = data[para['Mean']]
+            #catch empty Std lines
             try:
                 MeasStd = data[para['Std']]
             except KeyError:
                 MeasStd = 0
 
+        #Convert Data
         ConvMean = MeasMean * para['Conversion']
         ConvStd = MeasStd * para['Conversion']
         if 'CV_D_in_Sens' == Meas:
             ConvMean = abs(ConvMean)
+        
+        #Output in FA Script Values
         if ConvMean > para['Min'] and ConvMean < para['Max']:
             print('{0:28} = {1:20} : {2:40}'.format(Meas, ConvMean, 'is in Spec'))
             continue
@@ -79,7 +89,8 @@ def evaluateData(data):
     print('\n --------------------All other Values are in Spec-------------------- \n')
 
 
-
+# Function Calls:
+#--------------------
 if checkSensor == 1:
     SensorData = loadData()
     evaluateData(SensorData)
