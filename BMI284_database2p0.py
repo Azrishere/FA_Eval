@@ -114,7 +114,7 @@ for i, tdms in tdmsList.iterrows(): # iterate through all found files
     data.update({'tdmsLocation':tdms.tdmsLocation})
     data.update({'comment':tdms.comment})
     data.update({'isReference':tdms.isReference})
-    data.update({'link':tdms.link})
+    data.update({'Remeas':tdms.isRemeas})
 
     # convert dict to dataframe
     df=pd.DataFrame.from_dict([data])
