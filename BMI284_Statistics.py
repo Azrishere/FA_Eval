@@ -1,5 +1,5 @@
 # Autor:        Bijan Mielke
-# Date :        13.02.2022
+# Date :        25.02.2022
 # Description:  Script for statistical analysis of BMI284 sensors
 
 import pandas as pd
@@ -9,7 +9,7 @@ from rich import print                      # type: ignore
 # Path for the Databases:
 #------------------------
 dataPath = 'BMI284_DB.csv'                  
-conversionPath = 'BMI284_conversion.csv'    #Database for the Values to check, conversion factors and the Spec 
+conversionPath = 'Specs\BMI284_conversion.csv'    #Database for the Values to check, conversion factors and the Spec 
 
 
 #Settings:
