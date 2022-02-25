@@ -35,12 +35,12 @@ print(f'done \n')
 #-------------------------
 def checkMultiple():
     print('Multiple Sensors with this USNR found')
-    print(data)
-    selection = input('Wich of the Listed Sensors should be used? \n Pos Number:      ')
-    selData = data.iloc[selection]
-    Sensor = selData['name']
-    print(Sensor)
-    return 0            #not working
+    #for index in data:
+    #    print(index : data)
+    selection = input('Wich of the Listed Sensors should be used? \n Pos Number:      ') 
+    selData = data.iloc[int(selection)]
+    Sensor = selData.name
+    return Sensor           
 
 ## Loads the Data of a Sensor with given ID
 def loadData():
