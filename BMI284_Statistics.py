@@ -14,7 +14,7 @@ conversionPath = 'Specs\BMI284_conversion.csv'    #Database for the Values to ch
 
 #Settings:
 #---------
-Sensor = '0000H2HR13024074043KY'
+Sensor = '0000H6K250004047019KY'
 checkSensor = 1
 compareToRef = 0
 compareToAll = 0
@@ -28,13 +28,13 @@ print(f'\nLoading Database... \n ')
 faDB = pd.read_csv(dataPath, index_col='USNR')
 conv = pd.read_csv(conversionPath)
 data = faDB.loc[Sensor]
+Count = len(data)
 print(f'done \n')
 
 
 #Definition of Functions:
 #-------------------------
 def checkMultiple():
-    Count = len(data)
     print('{0} Sensors with this USNR found \n'.format(Count))
     i = 0
     while i < Count:
@@ -46,10 +46,10 @@ def checkMultiple():
     return comment                
 
 ## Loads the Data of a Sensor with given ID
-def loadData(data, Sensor):
-    if len(data) < 100:
+def loadData(count, Sensor):
+    if count < 100:
         SensorComment = checkMultiple()
-        data = faDB.loc[faDB['comment'] == SensorComment]
+        data = faDB.loc[faDB['comment'] == SensorComment].squeeze()
     else:
         data = faDB.loc[Sensor]
         SensorComment = data['comment']
@@ -111,7 +111,7 @@ def evaluateData(data):
 # Function Calls:
 #--------------------
 if checkSensor == 1:
-    SensorData = loadData(data, Sensor)
+    SensorData = loadData(Count, Sensor)
     evaluateData(SensorData)
 
 if testMultiple == 1:
