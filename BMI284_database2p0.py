@@ -41,6 +41,8 @@ def reorder_columns(dataframe, col_name, position=0):
 tdmsList=pd.read_csv('faFileList.csv')
 
 faDb = pd.DataFrame() # create empty failure analysis database
+faConv = pd.DataFrame() # create empty conversion database
+faConvert = pd.DataFrame()
 
 #------------------------------------------------------------------------------
 # Iterate through all found files
@@ -100,7 +102,10 @@ for i, tdms in tdmsList.iterrows(): # iterate through all found files
     else:
         faDb=pd.concat([faDb,df])
     
-# export
-faDb.to_sql('TDMS_Data', con)
+# export TDMS data to SQL Database
+faDb.to_sql('TDMS_Data', con, if_exists='replace')
 
-#faDb
+#import FA Conversion
+faConv = pd.read_sql_query('SELECT * from FA_Script', con)
+
+print(faConv.head())
