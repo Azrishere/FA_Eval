@@ -14,11 +14,11 @@ conversionPath = 'Specs\BMI284_conversion.csv'    #Database for the Values to ch
 
 #Settings:
 #---------
-Sensor = '0000H2NH52019028050KY'
-checkSensor = 0
+Sensor = '0000H2HR13024074043KY'
+checkSensor = 1
 compareToRef = 0
 compareToAll = 0
-testMultiple = 1
+testMultiple = 0
 
 
 #Init the Databases:      
@@ -34,20 +34,27 @@ print(f'done \n')
 #Definition of Functions:
 #-------------------------
 def checkMultiple():
-    print('Multiple Sensors with this USNR found')
-    #for index in data:
-    #    print(index : data)
-    selection = input('Wich of the Listed Sensors should be used? \n Pos Number:      ') 
+    Count = len(data)
+    print('{0} Sensors with this USNR found \n'.format(Count))
+    i = 0
+    while i < Count:
+        print('{0} : {1}'.format(i, data['comment'].iloc[i]))
+        i += 1
+    selection = input('\nWich of the Listed Sensors should be used? \n Pos Number:      ') 
     selData = data.iloc[int(selection)]
-    Sensor = selData.name
-    return Sensor           
+    comment = selData['comment']
+    return comment                
 
 ## Loads the Data of a Sensor with given ID
-def loadData():
-    if data.shape[0] > 1:
-        Sensor = checkMultiple(Sensor)              
-    print(f'Loading Data for the Sensor     USNR: {Sensor} \n')
-    data = faDB.loc[Sensor]
+def loadData(data, Sensor):
+    if len(data) < 100:
+        SensorComment = checkMultiple()
+        data = faDB.loc[faDB['comment'] == SensorComment]
+    else:
+        data = faDB.loc[Sensor]
+        SensorComment = data['comment']
+    print(f'\nLoading Data for the Sensor    \n USNR: {Sensor} \n Comment: {SensorComment}')
+
     print(f'done \n')
     return data
 
@@ -104,7 +111,7 @@ def evaluateData(data):
 # Function Calls:
 #--------------------
 if checkSensor == 1:
-    SensorData = loadData()
+    SensorData = loadData(data, Sensor)
     evaluateData(SensorData)
 
 if testMultiple == 1:
