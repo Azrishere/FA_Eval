@@ -11,13 +11,14 @@
 from nptdms import TdmsFile as td
 import pandas as pd
 from collections import OrderedDict
+import sqlite3
 
 #------------------------------------------------------------------------------
 # CONFIG
 #------------------------------------------------------------------------------
 
 # where to store the database with all the failure analysis data
-csvFilePath = 'BMI284_DB.csv'
+con = sqlite3.connect('BMI284.db')
 
 def reorder_columns(dataframe, col_name, position=0):
     """Reorder a dataframe's column.
@@ -100,6 +101,6 @@ for i, tdms in tdmsList.iterrows(): # iterate through all found files
         faDb=pd.concat([faDb,df])
     
 # export
-faDb.to_csv(csvFilePath)
+faDb.to_sql('TDMS_Data', con)
 
 #faDb
