@@ -42,7 +42,7 @@ tdmsList=pd.read_csv('faFileList.csv')
 
 faDb = pd.DataFrame() # create empty failure analysis database
 faConv = pd.DataFrame() # create empty conversion database
-faConvert = pd.DataFrame()
+ConvDb = pd.DataFrame()
 
 #------------------------------------------------------------------------------
 # Iterate through all found files
@@ -108,4 +108,48 @@ faDb.to_sql('TDMS_Data', con, if_exists='replace')
 #import FA Conversion
 faConv = pd.read_sql_query('SELECT * from FA_Script', con)
 
-print(faConv.head())
+cd = {}
+
+
+for index in faDb.iterrows():
+    for index, Measurement in faConv.iterrows():    
+        para = faConv.iloc[index]
+        Meas = para['Measurement']
+        #calculate Values for CM_inSens Parameters
+        if 'AIAA' in Meas:                        
+            MeasMean = data['g:rate_x:CM_inSens_PD_AIAA_pos:mean'] - data['g:rate_x:CM_inSens_PD_AIAA_neg:mean']
+            MeasStd = data['g:rate_x:CM_inSens_PD_AIAA_pos:std'] - data['g:rate_x:CM_inSens_PD_AIAA_neg:std']
+        elif 'AI' in Meas:
+            MeasMean = data['g:rate_x:CM_inSens_PD_AI_pos:mean'] - data['g:rate_x:CM_inSens_PD_AI_neg:mean']
+            MeasStd = data['g:rate_x:CM_inSens_PD_AI_pos:std'] - data['g:rate_x:CM_inSens_PD_AI_neg:std']
+        elif 'AA' in Meas:
+            MeasMean = data['g:rate_x:CM_inSens_PD_AA_pos:mean'] - data['g:rate_x:CM_inSens_PD_AA_neg:mean']
+            MeasStd = data['g:rate_x:CM_inSens_PD_AA_pos:std'] - data['g:rate_x:CM_inSens_PD_AA_neg:std']
+        elif 'S31' in Meas:
+            MeasMean = data['g:rate_x:CM_in_Sens_pos:mean'] - data['g:rate_x:CM_in_Sens_neg:mean']
+            MeasStd = data['g:rate_x:CM_in_Sens_pos:std'] - data['g:rate_x:CM_in_Sens_neg:std']
+        else:    
+            MeasMean = data[para['Mean']]
+            #catch empty Std lines
+            try:
+                MeasStd = data[para['Std']]
+            except KeyError:
+                MeasStd = 0
+
+        #Convert Data
+        ConvMean = MeasMean * para['Conversion']
+        ConvStd = MeasStd * para['Conversion']
+        if 'CV_D_in_Sens' == Meas:
+            ConvMean = abs(ConvMean)
+        
+        cd.update({Meas:ConvMean})
+        # add the ac values
+        Meas=Meas+':std'
+        cd.update({Meas:ConvStd})
+        #print(cd)
+        ConvData = pd.DataFrame.from_dict([cd])
+        if ConvDb.size == 0: # If this is the first file that we are parsing
+            ConvDb = ConvData
+        else:
+            ConvDb=pd.concat([ConvDb,ConvData])
+print(ConvDb)
