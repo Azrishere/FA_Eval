@@ -147,9 +147,9 @@ for index in faDb.iterrows():
         Meas=Meas+':std'
         cd.update({Meas:ConvStd})
         #print(cd)
-        ConvData = pd.DataFrame.from_dict([cd])
-        if ConvDb.size == 0: # If this is the first file that we are parsing
-            ConvDb = ConvData
-        else:
-            ConvDb=pd.concat([ConvDb,ConvData])
+    ConvData = pd.DataFrame.from_dict([cd])
+    if ConvDb.size == 0: # If this is the first file that we are parsing
+        ConvDb = ConvData
+    else:
+        ConvDb=pd.concat([ConvDb,ConvData])
 print(ConvDb)
